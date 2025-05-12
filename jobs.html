@@ -3,427 +3,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TalentX - Find your dream job</title>
-    <link rel="stylesheet" href="./styles/jobs.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>JobHuntly - Find Your Dream Job</title>
+    <link rel="stylesheet" href="styles/jobs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header class="header">
-        <div class="top-nav">
+        <nav class="top-nav">
+            <div class="logo">
+                <div class="logo-image">
+                    <img class="logo-bg" src="images/Icon.svg" alt="JobHuntly Logo">
+                </div>
+                <span class="logo-text">JobHuntly</span>
+            </div>
             <div class="menu">
-                <div class="logo">
-                    <div class="logo-image">
-                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/bb44c1a1e5d51d4556c897754617924a09b2e8b6?placeholderIfAbsent=true&apiKey=208cf4c56b11418793f86600ad6141ce" class="logo-bg">
-                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/910c7f9e0962d53bdf8f2676faeaf0e63f77a805?placeholderIfAbsent=true&apiKey=208cf4c56b11418793f86600ad6141ce" class="logo-icon">
-                    </div>
-                    <div class="logo-text">TalentyX</div>
-                </div>
                 <div class="menu-items">
-                    <a href="./jobs.html" class="top-menu">
-                        <span class="caption">Find Jobs</span>
-                        <div class="menu-indicator"></div>
-                    </a>
-                    <a href="./browse.html" class="top-menu">
-                        <span class="caption">Browse Companies</span>
-                        <div class="menu-indicator"></div>
-                    </a>
-                </div>
-            </div>
-            <div class="buttons">
-                <a href="./login.html">
-                    <button class="button login-button">Login</button>
-                </a>
-                <div class="divider"></div>
-                <a href="./signup.html">
-                    <button class="button signup-button">Sign Up</button>
-                </a>
-            </div>
-        </div>
-        <div class="hero-section">
-            <div class="title-container">
-                <div class="title">
-                    <div class="main-title">
-                        <span class="dark-text">Find your</span>
-                        <span class="blue-text">Dream job</span>
+                    <div class="top-menu">
+                        <a href="index.html" class="caption">Home</a>
                     </div>
-                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/624be132ff679f0061fb21ff9b4d1071ba861a38?placeholderIfAbsent=true&apiKey=208cf4c56b11418793f86600ad6141ce" class="title-decoration">
-                </div>
-                <div class="subtitle">
-                    Great platform for the job seeker that searching for new career heights and passionate about startups.
-                </div>
-                <div class="search-container">
-                    <div class="search-bar">
-                        <div class="job-title-input">
-                            <div class="icon">
-                                <i class="fa-solid fa-briefcase"></i>
-                            </div>
-                            <div class="input-field">
-                                <input type="text" placeholder="Job title or keyword">
-                                <div class="input-divider"></div>
-                            </div>
-                        </div>
-                        <div class="location-input">
-                            <div class="icon">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <div class="input-field">
-                                <div class="input-content">
-                                    <input type="text" placeholder="Location">
-                                </div>
-                                <div class="input-divider"></div>
-                            </div>
-                        </div>
-                        <button class="search-button">Search my job</button>
+                    <div class="top-menu">
+                        <a href="jobs.html" class="caption active">Find Jobs</a>
                     </div>
-                    <div class="popular-searches">
-                        Popular : <span class="popular-terms">UI Designer, UX Researcher, Android, Admin</span>
+                    <div class="top-menu">
+                        <a href="browse.html" class="caption">Browse Companies</a>
                     </div>
                 </div>
             </div>
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/23aed58ae33fdfd4edc349c4a416e47e0ba814d4?placeholderIfAbsent=true&apiKey=208cf4c56b11418793f86600ad6141ce" class="hero-decoration">
-        </div>
+            <div class="auth-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="signup.html" class="signup-btn">Sign Up</a>
+            </div>
+        </nav>
     </header>
 
-        <section class="job-listings">
-            <div class="job-filters">
-                <div class="filter-section">
-                    <div class="filter-header">
-                        <h3>Type of Employment</h3>
-                        <i class="fas fa-chevron-up"></i>
-                    </div>
-                    <div class="filter-options">
-                        <label class="checkbox-container">
-                            <input type="checkbox" checked> Full Time <span>(5)</span>
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="checkbox-container">
-                            <input type="checkbox"> Part Time <span>(3)</span>
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="checkbox-container">
-                            <input type="checkbox"> Remote <span>(7)</span>
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="checkbox-container">
-                            <input type="checkbox"> Internship <span>(24)</span>
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="checkbox-container">
-                            <input type="checkbox"> Contract <span>(3)</span>
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
+    <main class="job-listings">
+        <div class="search-section">
+            <div class="search-container">
+                <div class="search-input-group">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Job title or keyword">
                 </div>
-
-                <div class="filter-section">
-                    <div class="filter-header">
-                        <h3>Categories</h3>
-                        <i class="fas fa-chevron-up"></i>
-                    </div>
-                    <div class="filter-options">
-                        <label class="checkbox-container">
-                            <input type="checkbox"> Design <span>(24)</span>
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="checkbox-container">
-                            <input type="checkbox"> Sales <span>(5)</span>
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="checkbox-container">
-                            <input type="checkbox"> Marketing <span>(4)</span>
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="checkbox-container">
-                            <input type="checkbox" checked> Business <span>(2)</span>
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="checkbox-container">
-                            <input type="checkbox"> Human Resources <span>(8)</span>
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="checkbox-container">
-                            <input type="checkbox"> Finance <span>(6)</span>
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="checkbox-container">
-                            <input type="checkbox"> Engineering <span>(4)</span>
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="checkbox-container">
-                            <input type="checkbox" checked> Technology <span>(5)</span>
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
+                <div class="search-input-group">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" placeholder="Location">
                 </div>
-
-                <div class="filter-section">
-                    <div class="filter-header">
-                        <h3>Job Level</h3>
-                        <i class="fas fa-chevron-up"></i>
-                    </div>
-                    <div class="filter-options">
-                        <label class="checkbox-container">
-                            <input type="checkbox"> Entry Level <span>(12)</span>
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="checkbox-container">
-                            <input type="checkbox"> Mid-Level <span>(5)</span>
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="checkbox-container">
-                            <input type="checkbox"> Senior Level <span>(3)</span>
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="checkbox-container">
-                            <input type="checkbox" checked> Director <span>(12)</span>
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="checkbox-container">
-                            <input type="checkbox"> VP or Above <span>(7)</span>
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
+                <button class="search-btn">Search</button>
+            </div>
+        </div>
+        <aside class="job-filters">
+            <div class="filter-section">
+                <div class="filter-header">
+                    <h3>Type of Employment</h3>
                 </div>
+                <div class="filter-options">
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Full Time (56)
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Part Time (34)
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Remote (24)
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Internship (27)
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Contract (76)
+                    </label>
+                </div>
+            </div>
 
-                <div class="filter-section">
-                    <div class="filter-header">
-                        <h3>Salary Range</h3>
-                        <i class="fas fa-chevron-up"></i>
+            <div class="filter-section">
+                <div class="filter-header">
+                    <h3>Experience Level</h3>
+                </div>
+                <div class="filter-options">
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Entry Level (57)
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Mid Level (46)
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Senior Level (33)
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Director (21)
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        VP & Above (12)
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-header">
+                    <h3>Salary Range</h3>
+                </div>
+                <div class="filter-options">
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        $700 - $1000 (24)
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        $1000 - $1500 (45)
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        $1500 - $2000 (67)
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        $2000 - $3000 (39)
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Above $3000 (23)
+                    </label>
+                </div>
+            </div>
+        </aside>
+
+        <section class="job-results">
+            <div class="jobs-header">
+                <h2>All Jobs</h2>
+                <span class="job-count">Showing 73 results</span>
+                <div class="sort-options">
+                    <span>Sort by:</span>
+                    <div class="sort-dropdown">
+                        Most Relevant
+                        <i class="fas fa-chevron-down"></i>
                     </div>
-                    <div class="filter-options">
-                        <label class="checkbox-container">
-                            <input type="checkbox"> $700 - $1000 <span>(3)</span>
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="checkbox-container">
-                            <input type="checkbox"> $1000 - $1200 <span>(4)</span>
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="checkbox-container">
-                            <input type="checkbox"> $1200 - $2000 <span>(15)</span>
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="checkbox-container">
-                            <input type="checkbox" checked> $2000 to $4000 <span>(7)</span>
-                            <span class="checkmark"></span>
-                        </label>
+                    <div class="view-toggle">
+                        <button class="active">
+                            <i class="fas fa-list"></i>
+                        </button>
+                        <button>
+                            <i class="fas fa-th-large"></i>
+                        </button>
                     </div>
                 </div>
             </div>
 
-            <div class="job-results">
-                <div class="jobs-header">
-                    <h2>All Jobs</h2>
-                    <span class="job-count">Showing 73 Jobs</span>
-
-                    <div class="sort-options">
-                        <span>Sort by:</span>
-                        <div class="sort-dropdown">
-                            <span>Most relevant</span>
-                            <i class="fas fa-chevron-down"></i>
+            <div class="job-cards">
+                <!-- Job Card 1 -->
+                <div class="job-card">
+                    <div class="job-info">
+                        <div class="company-logo blue">
+                            <img src="images/Icon.svg" alt="Company Logo">
                         </div>
-                        <div class="view-toggle">
-                            <button class="list-view active"><i class="fas fa-list"></i></button>
-                            <button class="grid-view"><i class="fas fa-th-large"></i></button>
+                        <div class="job-details">
+                            <h3>Senior UI Designer</h3>
+                            <div class="company-location">
+                                Behance <span class="dot">•</span> Paris, France
+                            </div>
+                            <div class="job-tags">
+                                <span class="tag">Full Time</span>
+                                <span class="tag">Remote</span>
+                                <span class="tag tag-design">Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-apply">
+                        <button class="apply-btn">Apply Now</button>
+                        <div class="applicants">
+                            <span>48 applicants</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="job-cards">
-                    <!-- Job Card 1 -->
-                    <div class="job-card">
-                        <div class="job-info">
-                            <div class="company-logo green">
-                                <img src="/api/placeholder/40/40" alt="Company Logo">
-                            </div>
-                            <div class="job-details">
-                                <h3>Social Media Assistant</h3>
-                                <div class="company-location">
-                                    <span>Nomad</span>
-                                    <span class="dot">•</span>
-                                    <span>Paris, France</span>
-                                </div>
-                                <div class="job-tags">
-                                    <span class="tag">Full Time</span>
-                                    <span class="tag">Marketing</span>
-                                    <span class="tag tag-design">Design</span>
-                                </div>
-                            </div>
+                <!-- Job Card 2 -->
+                <div class="job-card">
+                    <div class="job-info">
+                        <div class="company-logo green">
+                            <img src="images/Icon.svg" alt="Company Logo">
                         </div>
-                        <div class="job-apply">
-                            <button class="apply-btn">Apply</button>
-                            <p class="applicants">6 applied <span>of 11 capacity</span></p>
+                        <div class="job-details">
+                            <h3>Product Designer</h3>
+                            <div class="company-location">
+                                Dribbble <span class="dot">•</span> San Francisco, USA
+                            </div>
+                            <div class="job-tags">
+                                <span class="tag">Full Time</span>
+                                <span class="tag">Remote</span>
+                                <span class="tag tag-design">Design</span>
+                            </div>
                         </div>
                     </div>
-
-                    <!-- Job Card 2 -->
-                    <div class="job-card">
-                        <div class="job-info">
-                            <div class="company-logo blue">
-                                <img src="/api/placeholder/40/40" alt="Dropbox Logo">
-                            </div>
-                            <div class="job-details">
-                                <h3>Brand Designer</h3>
-                                <div class="company-location">
-                                    <span>Dropbox</span>
-                                    <span class="dot">•</span>
-                                    <span>San Francisco, USA</span>
-                                </div>
-                                <div class="job-tags">
-                                    <span class="tag">Full Time</span>
-                                    <span class="tag">Marketing</span>
-                                    <span class="tag tag-design">Design</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="job-apply">
-                            <button class="apply-btn">Apply</button>
-                            <p class="applicants">8 applied <span>of 11 capacity</span></p>
-                        </div>
-                    </div>
-
-                    <!-- Job Card 3 -->
-                    <div class="job-card">
-                        <div class="job-info">
-                            <div class="company-logo teal">
-                                <img src="/api/placeholder/40/40" alt="Company Logo">
-                            </div>
-                            <div class="job-details">
-                                <h3>Interactive Developer</h3>
-                                <div class="company-location">
-                                    <span>Intercom</span>
-                                    <span class="dot">•</span>
-                                    <span>Hamburg, Germany</span>
-                                </div>
-                                <div class="job-tags">
-                                    <span class="tag">Full Time</span>
-                                    <span class="tag">Marketing</span>
-                                    <span class="tag tag-design">Design</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="job-apply">
-                            <button class="apply-btn">Apply</button>
-                            <p class="applicants">4 applied <span>of 12 capacity</span></p>
-                        </div>
-                    </div>
-
-                    <!-- Job Card 4 -->
-                    <div class="job-card">
-                        <div class="job-info">
-                            <div class="company-logo gray">
-                                <img src="/api/placeholder/40/40" alt="Company Logo">
-                            </div>
-                            <div class="job-details">
-                                <h3>Email Marketing</h3>
-                                <div class="company-location">
-                                    <span>Framer</span>
-                                    <span class="dot">•</span>
-                                    <span>London, England</span>
-                                </div>
-                                <div class="job-tags">
-                                    <span class="tag">Full Time</span>
-                                    <span class="tag">Marketing</span>
-                                    <span class="tag tag-design">Design</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="job-apply">
-                            <button class="apply-btn">Apply</button>
-                            <p class="applicants">5 applied <span>of 12 capacity</span></p>
-                        </div>
-                    </div>
-
-                    <!-- Job Card 5 -->
-                    <div class="job-card">
-                        <div class="job-info">
-                            <div class="company-logo teal">
-                                <img src="/api/placeholder/40/40" alt="Company Logo">
-                            </div>
-                            <div class="job-details">
-                                <h3>Lead Engineer</h3>
-                                <div class="company-location">
-                                    <span>Figma</span>
-                                    <span class="dot">•</span>
-                                    <span>Istanbul, Turkey</span>
-                                </div>
-                                <div class="job-tags">
-                                    <span class="tag">Full Time</span>
-                                    <span class="tag">Marketing</span>
-                                    <span class="tag tag-design">Design</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="job-apply">
-                            <button class="apply-btn">Apply</button>
-                            <p class="applicants">5 applied <span>of 12 capacity</span></p>
-                        </div>
-                    </div>
-
-                    <!-- Job Card 6 -->
-                    <div class="job-card">
-                        <div class="job-info">
-                            <div class="company-logo blue-dark">
-                                <img src="/api/placeholder/40/40" alt="Company Logo">
-                            </div>
-                            <div class="job-details">
-                                <h3>Product Designer</h3>
-                                <div class="company-location">
-                                    <span>Twitter</span>
-                                    <span class="dot">•</span>
-                                    <span>Milan, Italy</span>
-                                </div>
-                                <div class="job-tags">
-                                    <span class="tag">Full Time</span>
-                                    <span class="tag">Marketing</span>
-                                    <span class="tag tag-design">Design</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="job-apply">
-                            <button class="apply-btn">Apply</button>
-                            <p class="applicants">5 applied <span>of 12 capacity</span></p>
-                        </div>
-                    </div>
-
-                    <!-- Job Card 7 -->
-                    <div class="job-card">
-                        <div class="job-info">
-                            <div class="company-logo black">
-                                <img src="/api/placeholder/40/40" alt="Company Logo">
-                            </div>
-                            <div class="job-details">
-                                <h3>Customer Manager</h3>
-                                <div class="company-location">
-                                    <span>Framer</span>
-                                    <span class="dot">•</span>
-                                    <span>Berlin, Germany</span>
-                                </div>
-                                <div class="job-tags">
-                                    <span class="tag">Full Time</span>
-                                    <span class="tag">Marketing</span>
-                                    <span class="tag tag-design">Design</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="job-apply">
-                            <button class="apply-btn">Apply</button>
-                            <p class="applicants">6 applied <span>of 10 capacity</span></p>
+                    <div class="job-apply">
+                        <button class="apply-btn">Apply Now</button>
+                        <div class="applicants">
+                            <span>36 applicants</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="pagination">
-                    <button class="prev-page"><i class="fas fa-chevron-left"></i></button>
-                    <button class="page active">1</button>
-                    <button class="page">2</button>
-                    <button class="page">3</button>
-                    <button class="page">4</button>
-                    <button class="page">5</button>
-                    <span class="page-ellipsis">...</span>
-                    <button class="page">12</button>
-                    <button class="next-page"><i class="fas fa-chevron-right"></i></button>
+                <!-- Job Card 3 -->
+                <div class="job-card">
+                    <div class="job-info">
+                        <div class="company-logo teal">
+                            <img src="images/Icon.svg" alt="Company Logo">
+                        </div>
+                        <div class="job-details">
+                            <h3>UI/UX Designer</h3>
+                            <div class="company-location">
+                                Twitter <span class="dot">•</span> London, UK
+                            </div>
+                            <div class="job-tags">
+                                <span class="tag">Full Time</span>
+                                <span class="tag">Remote</span>
+                                <span class="tag tag-design">Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-apply">
+                        <button class="apply-btn">Apply Now</button>
+                        <div class="applicants">
+                            <span>24 applicants</span>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+            <div class="pagination">
+                <button class="prev-page">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <span class="page-ellipsis">...</span>
+                <button>8</button>
+                <button class="next-page">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
         </section>
     </main>
@@ -432,12 +272,11 @@
         <div class="footer-content">
             <div class="footer-brand">
                 <div class="footer-logo">
-                    <img src="/api/placeholder/28/28" alt="JobHuntly Logo">
-                    <span>JobHuntly</span>
+                    <img src="images/Icon.svg" alt="JobHuntly Logo">
+                    JobHuntly
                 </div>
                 <p>Great platform for the job seeker that passionate about startups. Find your dream job easier.</p>
             </div>
-            
             <div class="footer-links">
                 <div class="footer-column">
                     <h4>About</h4>
@@ -449,7 +288,6 @@
                         <li><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
-                
                 <div class="footer-column">
                     <h4>Resources</h4>
                     <ul>
@@ -459,30 +297,26 @@
                         <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
-                
                 <div class="footer-column">
                     <h4>Get job notifications</h4>
                     <p>The latest job news, articles, sent to your inbox weekly.</p>
                     <div class="subscribe-form">
-                        <input type="email" placeholder="Email address">
+                        <input type="email" placeholder="Email Address">
                         <button class="subscribe-btn">Subscribe</button>
                     </div>
                 </div>
             </div>
         </div>
-        
         <div class="footer-bottom">
-            <p>2023 © JobHuntly. All rights reserved.</p>
+            <p>2021 © JobHuntly. All rights reserved.</p>
             <div class="social-links">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-slack"></i></a>
             </div>
         </div>
     </footer>
 
-    <!-- <script src="./scripts/jobs.js"></script> -->
+    <script src="scripts/jobs.js"></script>
 </body>
 </html>
