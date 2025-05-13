@@ -3,57 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JobHuntly - Find Your Dream Job</title>
+    <title>TalentyX - Find Your Dream Job</title>
     <link rel="stylesheet" href="styles/jobs.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-section {
+            margin-bottom: 0.5rem !important;
+            padding-bottom: 0.2rem !important;
+        }
+        .title-container {
+            margin-bottom: 0.2rem !important;
+        }
+        .hero-decoration {
+            max-height: 50px !important;
+            height: 50px !important;
+        }
+    </style>
 </head>
 <body>
+    <div class="landing-page">
+        <!-- Header Section from index.html -->
     <header class="header">
-        <nav class="top-nav">
+            <div class="top-nav">
+                <div class="menu">
             <div class="logo">
                 <div class="logo-image">
-                    <img class="logo-bg" src="images/Icon.svg" alt="JobHuntly Logo">
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/bb44c1a1e5d51d4556c897754617924a09b2e8b6?placeholderIfAbsent=true&apiKey=208cf4c56b11418793f86600ad6141ce" class="logo-bg">
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/910c7f9e0962d53bdf8f2676faeaf0e63f77a805?placeholderIfAbsent=true&apiKey=208cf4c56b11418793f86600ad6141ce" class="logo-icon">
+                        </div>
+                        <div class="logo-text">TalentyX</div>
+                    </div>
+                    <div class="menu-items">
+                        <a href="./index.html" class="top-menu">
+                            <span class="caption">Home</span>
+                            <div class="menu-indicator"></div>
+                        </a>
+                        <a href="./jobs.html" class="top-menu">
+                            <span class="caption">Find Jobs</span>
+                            <div class="menu-indicator"></div>
+                        </a>
+                        <a href="./browse.html" class="top-menu">
+                            <span class="caption">Browse Companies</span>
+                            <div class="menu-indicator"></div>
+                        </a>
+                    </div>
                 </div>
-                <span class="logo-text">JobHuntly</span>
-            </div>
-            <div class="menu">
-                <div class="menu-items">
-                    <div class="top-menu">
-                        <a href="index.html" class="caption">Home</a>
-                    </div>
-                    <div class="top-menu">
-                        <a href="jobs.html" class="caption active">Find Jobs</a>
-                    </div>
-                    <div class="top-menu">
-                        <a href="browse.html" class="caption">Browse Companies</a>
-                    </div>
+                <div class="buttons">
+                    <a href="./login.html">
+                        <button class="button login-button">Login</button>
+                    </a>
+                    <div class="divider"></div>
+                    <a href="./signup.html">
+                        <button class="button signup-button">Sign Up</button>
+                    </a>
                 </div>
             </div>
-            <div class="auth-buttons">
-                <a href="login.html" class="login-btn">Login</a>
-                <a href="signup.html" class="signup-btn">Sign Up</a>
+            <div class="hero-section">
+                <div class="title-container">
+                    <div class="title">
+                        <div class="main-title">
+                            <span class="dark-text">Discover more than</span>
+                            <span class="blue-text">5000+ Jobs</span>
+                        </div>
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/624be132ff679f0061fb21ff9b4d1071ba861a38?placeholderIfAbsent=true&apiKey=208cf4c56b11418793f86600ad6141ce" class="title-decoration">
+                    </div>
+                    <div class="subtitle">
+                        Great platform for the job seeker that searching for new career heights and passionate about startups.
+                    </div>
+                    <div class="search-container">
+                        <div class="popular-searches">
+                            Popular : <span class="popular-terms">UI Designer, UX Researcher, Android, Admin</span>
+                        </div>
+                    </div>
+                </div>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/23aed58ae33fdfd4edc349c4a416e47e0ba814d4?placeholderIfAbsent=true&apiKey=208cf4c56b11418793f86600ad6141ce" class="hero-decoration">
             </div>
-        </nav>
     </header>
 
     <main class="job-listings">
-        <div class="search-section">
-            <div class="search-container">
-                <div class="search-input-group">
-                    <i class="fas fa-search"></i>
-                    <input type="text" placeholder="Job title or keyword">
-                </div>
-                <div class="search-input-group">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <input type="text" placeholder="Location">
-                </div>
-                <button class="search-btn">Search</button>
-            </div>
-        </div>
         <aside class="job-filters">
             <div class="filter-section">
                 <div class="filter-header">
-                    <h3>Type of Employment</h3>
+                        <h3>Type of Employment <i class="fas fa-chevron-down"></i></h3>
                 </div>
                 <div class="filter-options">
                     <label class="checkbox-container">
@@ -86,7 +121,7 @@
 
             <div class="filter-section">
                 <div class="filter-header">
-                    <h3>Experience Level</h3>
+                        <h3>Experience Level <i class="fas fa-chevron-down"></i></h3>
                 </div>
                 <div class="filter-options">
                     <label class="checkbox-container">
@@ -119,7 +154,7 @@
 
             <div class="filter-section">
                 <div class="filter-header">
-                    <h3>Salary Range</h3>
+                        <h3>Salary Range <i class="fas fa-chevron-down"></i></h3>
                 </div>
                 <div class="filter-options">
                     <label class="checkbox-container">
@@ -185,8 +220,8 @@
                                 Behance <span class="dot">•</span> Paris, France
                             </div>
                             <div class="job-tags">
-                                <span class="tag">Full Time</span>
-                                <span class="tag">Remote</span>
+                                <span class="tag tag-fulltime">Full-Time</span>
+                                <span class="tag-separator"></span>
                                 <span class="tag tag-design">Design</span>
                             </div>
                         </div>
@@ -211,8 +246,8 @@
                                 Dribbble <span class="dot">•</span> San Francisco, USA
                             </div>
                             <div class="job-tags">
-                                <span class="tag">Full Time</span>
-                                <span class="tag">Remote</span>
+                                <span class="tag tag-fulltime">Full-Time</span>
+                                <span class="tag-separator"></span>
                                 <span class="tag tag-design">Design</span>
                             </div>
                         </div>
@@ -237,8 +272,8 @@
                                 Twitter <span class="dot">•</span> London, UK
                             </div>
                             <div class="job-tags">
-                                <span class="tag">Full Time</span>
-                                <span class="tag">Remote</span>
+                                <span class="tag tag-fulltime">Full-Time</span>
+                                <span class="tag-separator"></span>
                                 <span class="tag tag-design">Design</span>
                             </div>
                         </div>
@@ -250,6 +285,110 @@
                         </div>
                     </div>
                 </div>
+
+                    <!-- Job Card 4 -->
+                    <div class="job-card">
+                        <div class="job-info">
+                            <div class="company-logo blue">
+                                <img src="images/Icon.svg" alt="Company Logo">
+                            </div>
+                            <div class="job-details">
+                                <h3>Frontend Developer</h3>
+                                <div class="company-location">
+                                    Google <span class="dot">•</span> Mountain View, USA
+                                </div>
+                                <div class="job-tags">
+                                    <span class="tag tag-fulltime">Full-Time</span>
+                                    <span class="tag-separator"></span>
+                                    <span class="tag tag-design">Design</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-apply">
+                            <button class="apply-btn">Apply Now</button>
+                            <div class="applicants">
+                                <span>52 applicants</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job Card 5 -->
+                    <div class="job-card">
+                        <div class="job-info">
+                            <div class="company-logo green">
+                                <img src="images/Icon.svg" alt="Company Logo">
+                            </div>
+                            <div class="job-details">
+                                <h3>Backend Engineer</h3>
+                                <div class="company-location">
+                                    Amazon <span class="dot">•</span> Berlin, Germany
+                                </div>
+                                <div class="job-tags">
+                                    <span class="tag tag-fulltime">Full-Time</span>
+                                    <span class="tag-separator"></span>
+                                    <span class="tag tag-design">Design</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-apply">
+                            <button class="apply-btn">Apply Now</button>
+                            <div class="applicants">
+                                <span>41 applicants</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job Card 6 -->
+                    <div class="job-card">
+                        <div class="job-info">
+                            <div class="company-logo teal">
+                                <img src="images/Icon.svg" alt="Company Logo">
+                            </div>
+                            <div class="job-details">
+                                <h3>Mobile App Developer</h3>
+                                <div class="company-location">
+                                    Revolut <span class="dot">•</span> Madrid, Spain
+                                </div>
+                                <div class="job-tags">
+                                    <span class="tag tag-fulltime">Full-Time</span>
+                                    <span class="tag-separator"></span>
+                                    <span class="tag tag-design">Design</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-apply">
+                            <button class="apply-btn">Apply Now</button>
+                            <div class="applicants">
+                                <span>29 applicants</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job Card 7 -->
+                    <div class="job-card">
+                        <div class="job-info">
+                            <div class="company-logo blue">
+                                <img src="images/Icon.svg" alt="Company Logo">
+                            </div>
+                            <div class="job-details">
+                                <h3>QA Engineer</h3>
+                                <div class="company-location">
+                                    Dropbox <span class="dot">•</span> San Francisco, USA
+                                </div>
+                                <div class="job-tags">
+                                    <span class="tag tag-fulltime">Full-Time</span>
+                                    <span class="tag-separator"></span>
+                                    <span class="tag tag-design">Design</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-apply">
+                            <button class="apply-btn">Apply Now</button>
+                            <div class="applicants">
+                                <span>18 applicants</span>
+                            </div>
+                        </div>
+                    </div>
             </div>
 
             <div class="pagination">
@@ -268,55 +407,54 @@
         </section>
     </main>
 
-    <footer>
+        <!-- Footer from index.html -->
+        <footer class="footer">
+            <div class="footer-container">
         <div class="footer-content">
-            <div class="footer-brand">
+                    <div class="footer-about">
                 <div class="footer-logo">
-                    <img src="images/Icon.svg" alt="JobHuntly Logo">
-                    JobHuntly
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1acabaf5df824f6d42358cbf776ccb9d8429967c?placeholderIfAbsent=true&apiKey=208cf4c56b11418793f86600ad6141ce" class="logo-icon">
+                            <div class="logo-text">TalentyX</div>
+                        </div>
+                        <div class="about-text">
+                            Great platform for the job seeker that passionate about startups. Find your dream job easier.
                 </div>
-                <p>Great platform for the job seeker that passionate about startups. Find your dream job easier.</p>
             </div>
             <div class="footer-links">
-                <div class="footer-column">
-                    <h4>About</h4>
-                    <ul>
-                        <li><a href="#">Companies</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">Advice</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
+                        <div class="links-title">About</div>
+                        <div class="links-list">
+                            <div class="link-item">Companies</div>
+                            <div class="link-item">Pricing</div>
+                            <div class="link-item">Terms</div>
+                            <div class="link-item">Advice</div>
+                            <div class="link-item">Privacy Policy</div>
+                        </div>
+                    </div>
+                    <div class="footer-resources">
+                        <div class="resources-title">Resources</div>
+                        <div class="resources-list">
+                            <div class="resource-item">Help Docs</div>
+                            <div class="resource-item">Guide</div>
+                            <div class="resource-item">Updates</div>
+                            <div class="resource-item">Contact Us</div>
+                        </div>
                 </div>
-                <div class="footer-column">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="#">Help Docs</a></li>
-                        <li><a href="#">Guide</a></li>
-                        <li><a href="#">Updates</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
+                    <div class="footer-subscribe">
+                        <div class="subscribe-title">Get job notifications</div>
+                        <div class="subscribe-text">
+                            The latest job news, articles, sent to your inbox weekly.
                 </div>
-                <div class="footer-column">
-                    <h4>Get job notifications</h4>
-                    <p>The latest job news, articles, sent to your inbox weekly.</p>
                     <div class="subscribe-form">
-                        <input type="email" placeholder="Email Address">
-                        <button class="subscribe-btn">Subscribe</button>
+                            <input type="email" placeholder="Email Address" class="email-input">
+                            <button class="subscribe-button">Subscribe</button>
+                        </div>
                     </div>
                 </div>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/acee25a48789e109ce8ccb04a320c95adea4daeb?placeholderIfAbsent=true&apiKey=208cf4c56b11418793f86600ad6141ce" class="footer-divider">
+                <div class="copyright">2021 @ TalentyX. All rights reserved.</div>
             </div>
+        </footer>
         </div>
-        <div class="footer-bottom">
-            <p>2021 © JobHuntly. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </footer>
-
     <script src="scripts/jobs.js"></script>
 </body>
 </html>
