@@ -1,0 +1,537 @@
+/* Search Bar Styles */
+.search-container {
+    margin-top: 1.5rem;
+    width: 100%;
+    font-size: var(--font-size-base);
+    line-height: 1.625;
+    max-width: 852px;
+    position: relative;
+    z-index: 2;
+}
+
+.search-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+    background-color: var(--white);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+
+.job-title-input {
+    display: flex;
+    flex: 1;
+    flex-shrink: 1;
+    gap: 1rem;
+    padding: 0 1rem;
+    height: 100%;
+    flex-basis: 22px;
+    min-width: 15rem;
+    color: var(--slate-500);
+    transition: all 0.3s ease;
+    cursor: text;
+}
+
+.job-title-input:hover .placeholder,
+.location-input:hover .location-text {
+    color: var(--slate-800);
+}
+
+.job-title-input:focus-within,
+.location-input:focus-within {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+.job-title-input:focus-within .input-divider,
+.location-input:focus-within .input-divider {
+    background-color: var(--primary);
+    height: 2px;
+}
+
+.icon {
+    display: flex;
+    flex-shrink: 0;
+    margin: auto 0;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.input-field {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.input-field input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: var(--font-size-base);
+    color: var(--slate-800);
+}
+
+.input-field input::placeholder {
+    color: var(--slate-500);
+}
+
+.input-field {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.input-field input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: var(--font-size-base);
+    color: var(--slate-800);
+}
+
+.input-divider {
+    width: 100%;
+    height: 1px;
+    background: var(--slate-200);
+    margin-top: 8px;
+    position: relative;
+}
+
+.job-title-input:hover .input-divider {
+    opacity: 1;
+}
+
+.location-input .input-divider {
+    width: 100%;
+    height: 1px;
+    background: var(--slate-200);
+    margin-top: 8px;
+    position: relative;
+}
+
+.search-button {
+    padding: 0.75rem 1.5rem;
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-left: 1rem;
+    align-self: center;
+}
+
+.search-button:hover {
+    background: #3530be;
+}
+
+.popular-searches {
+    color: var(--slate-500);
+    font-size: var(--font-size-sm);
+}
+
+.popular-terms {
+    color: var(--slate-800);
+    font-weight: 500;
+}
+
+/* Browse Companies Page Styles */
+
+/* Footer Styles */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3.5rem 5rem;
+    width: 100%;
+    background-color: var(--slate-800);
+    color: var(--white);
+    margin-top: 4rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1192px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
+    width: 100%;
+}
+
+.footer-about {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.footer-logo {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    color: var(--white);
+}
+
+.footer-logo .logo-icon {
+    object-fit: contain;
+    flex-shrink: 0;
+    margin: auto 0;
+    width: 2rem;
+    aspect-ratio: 1/1;
+}
+
+.footer-logo .logo-text {
+    color: var(--white);
+    flex-basis: auto;
+}
+
+.about-text {
+    margin-top: 1.5rem;
+    font-size: var(--font-size-base);
+    line-height: 1.75;
+    color: var(--slate-500);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 200px;
+}
+
+.links-title {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+
+.links-list {
+    margin-top: 1.25rem;
+    font-size: var(--font-size-base);
+    color: var(--zinc-200);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.link-item {
+    color: var(--slate-500);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: block;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.link-item:hover {
+    color: var(--white);
+}
+
+.footer-resources {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.footer-subscribe {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.subscribe-title {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.subscribe-text {
+    color: var(--slate-500);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.subscribe-input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--slate-500);
+    border-radius: 4px;
+    background: transparent;
+    color: var(--white);
+    font-size: var(--font-size-base);
+    transition: border-color 0.3s ease;
+}
+
+.subscribe-input:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+
+.subscribe-button {
+    padding: 0.75rem 1.5rem;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.subscribe-button:hover {
+    background: #3530be;
+    transform: translateY(-1px);
+}
+
+/* Companies Section Layout */
+.companies-section {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Filters Sidebar */
+.company-filters {
+    width: 280px;
+    flex-shrink: 0;
+}
+
+.filter-section {
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.filter-header {
+    margin-bottom: 1rem;
+}
+
+.filter-header h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111827;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Checkbox Styles */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #4B5563;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #D1D5DB;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Companies Results Section */
+.companies-results {
+    flex-grow: 1;
+}
+
+.companies-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.companies-header h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111827;
+}
+
+.company-count {
+    color: #6B7280;
+    font-size: 0.875rem;
+}
+
+.sort-options {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sort-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.view-toggle {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.view-toggle button {
+    padding: 0.5rem;
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.view-toggle button.active {
+    background: #F3F4F6;
+}
+
+/* Company Cards */
+.company-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.company-card {
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.company-info {
+    display: flex;
+    gap: 1rem;
+}
+
+.company-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-logo.blue { background: #EBF5FF; }
+.company-logo.green { background: #ECFDF5; }
+.company-logo.teal { background: #F0FDFA; }
+
+.company-logo img {
+    width: 24px;
+    height: 24px;
+}
+
+.company-details h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.25rem;
+}
+
+.company-location {
+    color: #6B7280;
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+}
+
+.company-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.stat {
+    color: #4B5563;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.view-jobs-btn {
+    background: #F9FAFB;
+    color: #111827;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    padding: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.view-jobs-btn:hover {
+    background: #F3F4F6;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.pagination button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    background: #FFFFFF;
+    color: #4B5563;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background: #2563EB;
+    color: #FFFFFF;
+    border-color: #2563EB;
+}
+
+.pagination .prev-page,
+.pagination .next-page {
+    padding: 0.5rem;
+}
+
+.page-ellipsis {
+    color: #4B5563;
+}

@@ -527,6 +527,8 @@ a {
     border-radius: 0 4px 4px 0;
     transition: all 0.3s ease;
     border: none;
+    margin-left: 1rem;
+    align-self: center;
 }
 
 .search-button:hover {
