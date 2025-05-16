@@ -1,0 +1,415 @@
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* Colors */
+:root {
+  --dark-blue: #25324B;
+  --gray-text: #515B6F;
+  --light-gray: #A8ADB7;
+  --mid-gray: #7C8493;
+  --border-color: #D6DDEB;
+  --white: #ffffff;
+  --primary-blue: #4640DE;
+  --light-blue-bg: #F8F8FD;
+  --dark-text: #202430;
+  --bg-gray: #f3f4f6;
+}
+
+/* Layout */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.bg-gray-50 {
+  background-color: var(--bg-gray);
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.max-w-644 {
+  max-width: 644px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+/* Typography */
+.text-3xl {
+  font-size: 1.875rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-base {
+  font-size: 1rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.leading-1-2 {
+  line-height: 1.2;
+}
+
+.leading-1-6 {
+  line-height: 1.6;
+}
+
+/* Form elements */
+.application-form {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.w-full {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-stretch {
+  align-items: stretch;
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+  height: auto;
+}
+
+.w-20 {
+  width: 5rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.self-stretch {
+  align-self: stretch;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.min-w-60 {
+  min-width: 15rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
+}
+
+.object-contain {
+  object-fit: contain;
+}
+
+.h-27 {
+  height: 27px;
+}
+
+/* Form divider */
+.form-divider {
+  border: 1px solid var(--border-color);
+  background-color: var(--border-color);
+  min-height: 0;
+  max-width: 100%;
+  width: 580px;
+  margin-top: 2rem;
+}
+
+/* Input fields */
+.form-input {
+  color: var(--light-gray);
+  align-self: stretch;
+  border: 1px solid var(--border-color);
+  width: 100%;
+  gap: 0.625rem;
+  font-weight: normal;
+  background-color: var(--white);
+  margin-top: 0.25rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0;
+  font-size: 1rem;
+}
+
+.form-input::placeholder {
+  color: var(--light-gray);
+}
+
+/* Textarea */
+.text-area-input {
+  color: var(--light-gray);
+  border: 1px solid var(--border-color);
+  min-height: 152px;
+  width: 100%;
+  gap: 0.625rem;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.6;
+  background-color: var(--white);
+  padding: 1rem 1rem;
+  padding-bottom: 110px;
+  border-bottom: none;
+  resize: none;
+}
+
+.textarea-toolbar {
+  align-items: center;
+  border: 1px solid var(--border-color);
+  border-top: none;
+  display: flex;
+  width: 100%;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  background-color: var(--white);
+  padding-left: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.format-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 1.5rem;
+  align-self: stretch;
+  flex-shrink: 0;
+  margin: auto 0;
+  cursor: pointer;
+}
+
+.character-count {
+  display: flex;
+  width: 100%;
+  gap: 40px 100px;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.6;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 0.25rem;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Resume upload */
+.resume-upload {
+  display: flex;
+  align-items: center;
+  gap: 40px 197px;
+  overflow: hidden;
+  font-size: 1rem;
+  line-height: 1.6;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.text-dark-text {
+  color: var(--dark-text);
+}
+
+.upload-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  border: 1px dashed var(--primary-blue);
+  align-self: stretch;
+  gap: 1rem;
+  color: var(--gray-text);
+  font-weight: 500;
+  background-color: var(--light-blue-bg);
+  margin: auto 0;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.upload-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 1.5rem;
+  align-self: stretch;
+  flex-shrink: 0;
+  margin: auto 0;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Submit button */
+.submit-button {
+  color: var(--white);
+  align-self: stretch;
+  width: 100%;
+  gap: 0.625rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.6;
+  background-color: var(--primary-blue);
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.terms-text {
+  color: var(--gray-text);
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 26px;
+  margin-top: 2rem;
+}
+
+.terms-link {
+  color: var(--primary-blue);
+  text-decoration: none;
+}
+
+.terms-link:hover {
+  text-decoration: underline;
+}
+
+/* Text colors */
+.text-dark-blue {
+  color: var(--dark-blue);
+}
+
+.text-gray-text {
+  color: var(--gray-text);
+}
+
+.text-light-gray {
+  color: var(--light-gray);
+}
+
+.text-mid-gray {
+  color: var(--mid-gray);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .px-8 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  
+  .text-area-input {
+    padding-bottom: 100px;
+  }
+  
+  .resume-upload {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .upload-button {
+    width: 100%;
+  }
+  
+  .character-count {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .text-right {
+    text-align: left;
+  }
+}
