@@ -729,6 +729,182 @@
     </footer>
   </div>
 
+  <!-- Modal Overlay -->
+  <div class="modal-overlay" id="modalOverlay"></div>
+
+  <!-- Application Menu -->
+  <div class="application-menu" id="applicationMenu">
+    <div class="menu-header">
+      <h2 class="section-title">Submit your application</h2>
+      <button class="close-menu" id="closeMenu">&times;</button>
+    </div>
+    <div class="w-full flex flex-col bg-white px-8 py-7">
+      <!-- Job Header -->
+      <div class="flex items-center gap-6">
+        <div class="company-logo">S</div>
+        <div class="self-stretch min-w-60 my-auto">
+          <div class="text-dark-blue text-2xl font-semibold leading-1-2">
+            Social Media Assistant
+          </div>
+          <div class="flex h-27 items-center gap-4 text-lg text-gray-text font-normal leading-1-6 mt-2">
+            <div class="text-gray-text self-stretch my-auto">
+              Stripe
+            </div>
+            <div class="text-gray-text self-stretch my-auto">
+              Paris, France
+            </div>
+            <div class="text-gray-text self-stretch my-auto">
+              Full-Time
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Form Divider -->
+      <div class="form-divider"></div>
+      
+      <!-- Personal Information Section -->
+      <div class="mt-8">
+        <div class="text-mid-gray text-base font-normal leading-1-6 mt-4">
+          The following is required and will only be shared with Stripe
+        </div>
+        
+        <!-- Full name input -->
+        <div class="w-full text-base leading-1-6 mt-8">
+          <div class="text-gray-text font-semibold">Full name</div>
+          <input
+            type="text"
+            placeholder="Enter your fullname"
+            class="form-input"
+          />
+        </div>
+        
+        <!-- Email address input -->
+        <div class="w-full text-base leading-1-6 mt-8">
+          <div class="text-gray-text font-semibold">Email address</div>
+          <input
+            type="email"
+            placeholder="Enter your email address"
+            class="form-input"
+          />
+        </div>
+        
+        <!-- Phone number input -->
+        <div class="w-full text-base leading-1-6 mt-8">
+          <div class="text-gray-text font-semibold">Phone number</div>
+          <input
+            type="tel"
+            placeholder="Enter your phone number"
+            class="form-input"
+          />
+        </div>
+        
+        <!-- Job title input -->
+        <div class="w-full text-base leading-1-6 mt-8">
+          <div class="text-gray-text font-semibold">Current of previous job title</div>
+          <input
+            type="text"
+            placeholder="What's your current or previous job title?"
+            class="form-input"
+          />
+        </div>
+      </div>
+      
+      <!-- Form Divider -->
+      <div class="form-divider"></div>
+      
+      <!-- Links Section -->
+      <div class="text-dark-blue text-lg font-bold leading-1-6 mt-8">
+        LINKS
+      </div>
+      
+      <!-- LinkedIn input -->
+      <div class="w-full text-base leading-1-6 mt-8">
+        <div class="text-gray-text font-semibold">LinkedIn URL</div>
+        <input
+          type="url"
+          placeholder="Link to your LinkedIn URL"
+          class="form-input"
+        />
+      </div>
+      
+      <!-- Portfolio input -->
+      <div class="w-full text-base leading-1-6 mt-8">
+        <div class="text-gray-text font-semibold">Portfolio URL</div>
+        <input
+          type="url"
+          placeholder="Link to your portfolio URL"
+          class="form-input"
+        />
+      </div>
+      
+      <!-- Form Divider -->
+      <div class="form-divider"></div>
+      
+      <!-- Additional Information Section -->
+      <div class="w-full mt-8">
+        <div class="text-gray-text text-base font-semibold leading-1-6">
+          Additional information
+        </div>
+        <div class="w-full mt-1">
+          <textarea
+            placeholder="Add a cover letter or anything else you want to share"
+            class="text-area-input"
+            maxlength="500"
+            id="additionalInfo"
+          ></textarea>
+          <div class="character-count">
+            <div class="text-light-gray">
+              Maximum 500 characters
+            </div>
+            <div class="text-gray-text text-right character-counter">
+              0 / 500
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Resume Upload Section -->
+      <div class="resume-upload">
+        <div class="text-dark-text font-semibold self-stretch my-auto" id="file-name-display">
+          Attach your resume
+        </div>
+        <label class="upload-button">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/f61b8bc01d7e435eba0f77fddef399d5/ffff360af3de3360566be4a8f3b5617d417d1adf?placeholderIfAbsent=true"
+            alt="Upload icon"
+            class="upload-icon"
+          />
+          <div class="text-gray-text self-stretch my-auto">
+            Attach Resume/CV
+          </div>
+          <input
+            type="file"
+            accept=".pdf,.doc,.docx"
+            class="hidden"
+            id="resume-upload"
+          />
+        </label>
+      </div>
+      
+      <!-- Form Divider -->
+      <div class="form-divider"></div>
+      
+      <!-- Submit Button Section -->
+      <button
+        class="submit-button"
+        id="submit-application"
+      >
+        Submit Application
+      </button>
+      <div class="terms-text">
+        By sending the request you can confirm that you accept our
+        <a href="#" class="terms-link">Terms of Service</a> and
+        <a href="#" class="terms-link">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+
   <script src="./scripts/JobDescription.js"></script>
 </body>
 </html>

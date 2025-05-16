@@ -1,4 +1,3 @@
-
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
   // Handle form submission for newsletter subscription
@@ -97,13 +96,70 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Apply button functionality
   const applyButton = document.querySelector('.btn-apply');
-  if (applyButton) {
-    applyButton.addEventListener('click', function() {
-      console.log('Apply for job clicked!');
-      // In a real application, this would open a modal or navigate to application page
-      alert('Application feature would open here!');
-    });
+  const applicationMenu = document.getElementById('applicationMenu');
+  const modalOverlay = document.getElementById('modalOverlay');
+  const closeMenuButton = document.getElementById('closeMenu');
+  const textArea = document.querySelector('.text-area-input');
+  const charCounter = document.querySelector('.character-counter');
+  const fileInput = document.getElementById('resume-upload');
+  const fileNameDisplay = document.getElementById('file-name-display');
+  const submitButton = document.getElementById('submit-application');
+
+  // Function to update character count
+  function updateCharCount() {
+    const count = textArea.value.length;
+    charCounter.textContent = `${count} / 500`;
   }
+
+  // Function to handle file upload
+  function handleFileUpload(event) {
+    const file = event.target.files[0];
+    if (file) {
+      fileNameDisplay.textContent = file.name;
+    }
+  }
+
+  // Function to handle form submission
+  function handleSubmit(event) {
+    event.preventDefault();
+    console.log('Form submitted');
+    closeMenu();
+  }
+
+  // Function to open menu
+  function openMenu() {
+    modalOverlay.style.display = 'block';
+    applicationMenu.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  // Function to close menu
+  function closeMenu() {
+    modalOverlay.style.display = 'none';
+    applicationMenu.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  // Event listeners
+  applyButton.addEventListener('click', openMenu);
+  closeMenuButton.addEventListener('click', closeMenu);
+  modalOverlay.addEventListener('click', closeMenu);
+  textArea.addEventListener('input', updateCharCount);
+  fileInput.addEventListener('change', handleFileUpload);
+  submitButton.addEventListener('click', handleSubmit);
+
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    const isClickInsideMenu = applicationMenu.contains(event.target);
+    const isClickOnApplyButton = applyButton.contains(event.target);
+    
+    if (!isClickInsideMenu && !isClickOnApplyButton && applicationMenu.classList.contains('open')) {
+      closeMenu();
+    }
+  });
+
+  // Initialize character count
+  updateCharCount();
 
   // Add animation for company section images on scroll
   const companyImages = document.querySelectorAll('.company-image-main, .company-image-small');
