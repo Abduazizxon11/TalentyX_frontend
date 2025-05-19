@@ -1,0 +1,573 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JobHuntly - Find Your Dream Job</title>
+    <meta name="description" content="JobHuntly - Find and apply to the best jobs in your field" />
+    <meta name="author" content="JobHuntly" />
+    <link rel="stylesheet" href="./styles/DashFindJob.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="logo">
+            <img src="/lovable-uploads/a5cc87f1-9424-43fd-86ac-464ae572aa10.png" alt="JobHuntly Logo" />
+            <span>JobHuntly</span>
+          </div>
+        </div>
+
+        <nav class="sidebar-menu">
+          <ul class="menu-items">
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="menu-item active">
+              <a href="#" class="menu-link">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Messages</span>
+                <span class="badge">1</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="fa-solid fa-file-alt"></i>
+                <span>My Applications</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="fa-solid fa-search"></i>
+                <span>Find Jobs</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="fa-solid fa-building"></i>
+                <span>Browse Companies</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="fa-solid fa-user"></i>
+                <span>My Public Profile</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="sidebar-section">
+          <h3 class="section-title">SETTINGS</h3>
+          <ul class="menu-items">
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="fa-solid fa-cog"></i>
+                <span>Settings</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="fa-solid fa-question-circle"></i>
+                <span>Help Center</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="user-profile">
+          <div class="profile-pic">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Profile" />
+          </div>
+          <div class="profile-info">
+            <div class="name">Jake Gyll</div>
+            <div class="email">jake@example.com</div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <header class="main-header">
+          <h1>Find Jobs</h1>
+          <div class="header-actions">
+            <a href="#" class="back-link">Back to homepage</a>
+            <button class="notification-btn">
+              <i class="fa-solid fa-bell"></i>
+            </button>
+          </div>
+        </header>
+
+        <div class="content-wrapper">
+          <!-- Search Section -->
+          <div class="search-section">
+            <div class="search-container">
+              <div class="search-input-group">
+                <i class="fa-solid fa-search"></i>
+                <input type="text" placeholder="Job title or keyword" />
+              </div>
+              <div class="location-input-group">
+                <i class="fa-solid fa-map-marker-alt"></i>
+                <input type="text" placeholder="Florence, Italy" />
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <button class="search-btn">Search</button>
+            </div>
+
+            <div class="search-tags">
+              <span class="search-tag-label">Popular:</span>
+              <span class="search-tag">UI Designer,</span>
+              <span class="search-tag">UX Researcher,</span>
+              <span class="search-tag">Android,</span>
+              <span class="search-tag">Admin</span>
+            </div>
+          </div>
+
+          <!-- Filters and Jobs Section -->
+          <div class="jobs-container">
+            <!-- Filters Sidebar -->
+            <div class="filters-sidebar">
+              <div class="filter-section">
+                <div class="filter-header">
+                  <h3>Type of Employment</h3>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="filter-options">
+                  <label class="filter-option">
+                    <input type="checkbox" />
+                    <span class="checkbox"></span>
+                    <span>Full-time</span>
+                    <span class="count">(3)</span>
+                  </label>
+                  <label class="filter-option">
+                    <input type="checkbox" />
+                    <span class="checkbox"></span>
+                    <span>Part-Time</span>
+                    <span class="count">(5)</span>
+                  </label>
+                  <label class="filter-option">
+                    <input type="checkbox" />
+                    <span class="checkbox"></span>
+                    <span>Remote</span>
+                    <span class="count">(2)</span>
+                  </label>
+                  <label class="filter-option">
+                    <input type="checkbox" />
+                    <span class="checkbox"></span>
+                    <span>Internship</span>
+                    <span class="count">(24)</span>
+                  </label>
+                  <label class="filter-option">
+                    <input type="checkbox" />
+                    <span class="checkbox"></span>
+                    <span>Contract</span>
+                    <span class="count">(3)</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="filter-section">
+                <div class="filter-header">
+                  <h3>Categories</h3>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="filter-options">
+                  <label class="filter-option">
+                    <input type="checkbox" checked />
+                    <span class="checkbox"></span>
+                    <span>Design</span>
+                    <span class="count">(24)</span>
+                  </label>
+                  <label class="filter-option">
+                    <input type="checkbox" />
+                    <span class="checkbox"></span>
+                    <span>Sales</span>
+                    <span class="count">(1)</span>
+                  </label>
+                  <label class="filter-option">
+                    <input type="checkbox" />
+                    <span class="checkbox"></span>
+                    <span>Marketing</span>
+                    <span class="count">(5)</span>
+                  </label>
+                  <label class="filter-option">
+                    <input type="checkbox" />
+                    <span class="checkbox"></span>
+                    <span>Business</span>
+                    <span class="count">(3)</span>
+                  </label>
+                  <label class="filter-option">
+                    <input type="checkbox" />
+                    <span class="checkbox"></span>
+                    <span>Human Resource</span>
+                    <span class="count">(6)</span>
+                  </label>
+                  <label class="filter-option">
+                    <input type="checkbox" />
+                    <span class="checkbox"></span>
+                    <span>Finance</span>
+                    <span class="count">(4)</span>
+                  </label>
+                  <label class="filter-option">
+                    <input type="checkbox" />
+                    <span class="checkbox"></span>
+                    <span>Engineering</span>
+                    <span class="count">(4)</span>
+                  </label>
+                  <label class="filter-option">
+                    <input type="checkbox" checked />
+                    <span class="checkbox"></span>
+                    <span>Technology</span>
+                    <span class="count">(5)</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="filter-section">
+                <div class="filter-header">
+                  <h3>Job Level</h3>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="filter-options">
+                  <label class="filter-option">
+                    <input type="checkbox" />
+                    <span class="checkbox"></span>
+                    <span>Entry Level</span>
+                    <span class="count">(57)</span>
+                  </label>
+                  <label class="filter-option">
+                    <input type="checkbox" />
+                    <span class="checkbox"></span>
+                    <span>Mid Level</span>
+                    <span class="count">(3)</span>
+                  </label>
+                  <label class="filter-option">
+                    <input type="checkbox" />
+                    <span class="checkbox"></span>
+                    <span>Senior Level</span>
+                    <span class="count">(5)</span>
+                  </label>
+                  <label class="filter-option">
+                    <input type="checkbox" checked />
+                    <span class="checkbox"></span>
+                    <span>Director</span>
+                    <span class="count">(12)</span>
+                  </label>
+                  <label class="filter-option">
+                    <input type="checkbox" />
+                    <span class="checkbox"></span>
+                    <span>VP & Above</span>
+                    <span class="count">(8)</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="filter-section">
+                <div class="filter-header">
+                  <h3>Salary Range</h3>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="filter-options">
+                  <label class="filter-option">
+                    <input type="checkbox" />
+                    <span class="checkbox"></span>
+                    <span>$700 - $1000</span>
+                    <span class="count">(4)</span>
+                  </label>
+                  <label class="filter-option">
+                    <input type="checkbox" />
+                    <span class="checkbox"></span>
+                    <span>$100 - $1500</span>
+                    <span class="count">(6)</span>
+                  </label>
+                  <label class="filter-option">
+                    <input type="checkbox" />
+                    <span class="checkbox"></span>
+                    <span>$1500 - $2000</span>
+                    <span class="count">(10)</span>
+                  </label>
+                  <label class="filter-option">
+                    <input type="checkbox" checked />
+                    <span class="checkbox"></span>
+                    <span>$3000 or above</span>
+                    <span class="count">(4)</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Jobs List -->
+            <div class="jobs-list">
+              <div class="jobs-header">
+                <h2>All Jobs</h2>
+                <div class="jobs-actions">
+                  <div class="sort-dropdown">
+                    <span>Sort by:</span>
+                    <div class="sort-selector">
+                      <span>Most relevant</span>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                  </div>
+                  <div class="view-toggle">
+                    <button class="view-btn grid-view">
+                      <i class="fa-solid fa-th-large"></i>
+                    </button>
+                    <button class="view-btn list-view active">
+                      <i class="fa-solid fa-list"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="results-count">Showing 73 results</div>
+
+              <div class="job-cards">
+                <!-- Job Card 1 -->
+                <div class="job-card">
+                  <div class="job-card-left">
+                    <div class="company-logo green">
+                      <span>N</span>
+                    </div>
+                    <div class="job-info">
+                      <h3 class="job-title">Social Media Assistant</h3>
+                      <div class="company-info">
+                        <span class="company-name">Nomad</span>
+                        <span class="company-location">• Paris, France</span>
+                      </div>
+                      <div class="job-tags">
+                        <span class="job-type">Full-Time</span>
+                        <span class="job-tag marketing">Marketing</span>
+                        <span class="job-tag design">Design</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="job-card-right">
+                    <div class="applicants-info">
+                      <div class="progress-bar">
+                        <div class="progress" style="width: 50%"></div>
+                      </div>
+                      <span class="applicants-text">5 applied</span>
+                      <span class="of">of 10 capacity</span>
+                    </div>
+                    <button class="apply-btn">Apply</button>
+                  </div>
+                </div>
+
+                <!-- Job Card 2 -->
+                <div class="job-card">
+                  <div class="job-card-left">
+                    <div class="company-logo blue">
+                      <span>D</span>
+                    </div>
+                    <div class="job-info">
+                      <h3 class="job-title">Brand Designer</h3>
+                      <div class="company-info">
+                        <span class="company-name">Dropbox</span>
+                        <span class="company-location">• San Francisco, USA</span>
+                      </div>
+                      <div class="job-tags">
+                        <span class="job-type">Full-Time</span>
+                        <span class="job-tag marketing">Marketing</span>
+                        <span class="job-tag design">Design</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="job-card-right">
+                    <div class="applicants-info">
+                      <div class="progress-bar">
+                        <div class="progress" style="width: 20%"></div>
+                      </div>
+                      <span class="applicants-text">2 applied</span>
+                      <span class="of">of 10 capacity</span>
+                    </div>
+                    <button class="apply-btn">Apply</button>
+                  </div>
+                </div>
+
+                <!-- Job Card 3 -->
+                <div class="job-card">
+                  <div class="job-card-left">
+                    <div class="company-logo teal">
+                      <span>T</span>
+                    </div>
+                    <div class="job-info">
+                      <h3 class="job-title">Interactive Developer</h3>
+                      <div class="company-info">
+                        <span class="company-name">Terraform</span>
+                        <span class="company-location">• Hamburg, Germany</span>
+                      </div>
+                      <div class="job-tags">
+                        <span class="job-type">Full-Time</span>
+                        <span class="job-tag marketing">Marketing</span>
+                        <span class="job-tag design">Design</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="job-card-right">
+                    <div class="applicants-info">
+                      <div class="progress-bar">
+                        <div class="progress" style="width: 66%"></div>
+                      </div>
+                      <span class="applicants-text">8 applied</span>
+                      <span class="of">of 12 capacity</span>
+                    </div>
+                    <button class="apply-btn">Apply</button>
+                  </div>
+                </div>
+
+                <!-- Job Card 4 -->
+                <div class="job-card">
+                  <div class="job-card-left">
+                    <div class="company-logo blue-dark">
+                      <span>R</span>
+                    </div>
+                    <div class="job-info">
+                      <h3 class="job-title">Email Marketing</h3>
+                      <div class="company-info">
+                        <span class="company-name">Revolut</span>
+                        <span class="company-location">• Madrid, Spain</span>
+                      </div>
+                      <div class="job-tags">
+                        <span class="job-type">Full-Time</span>
+                        <span class="job-tag marketing">Marketing</span>
+                        <span class="job-tag design">Design</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="job-card-right">
+                    <div class="applicants-info">
+                      <div class="progress-bar">
+                        <div class="progress" style="width: 0%"></div>
+                      </div>
+                      <span class="applicants-text">0 applied</span>
+                      <span class="of">of 10 capacity</span>
+                    </div>
+                    <button class="apply-btn">Apply</button>
+                  </div>
+                </div>
+
+                <!-- Job Card 5 -->
+                <div class="job-card">
+                  <div class="job-card-left">
+                    <div class="company-logo turquoise">
+                      <span>C</span>
+                    </div>
+                    <div class="job-info">
+                      <h3 class="job-title">Lead Engineer</h3>
+                      <div class="company-info">
+                        <span class="company-name">Canva</span>
+                        <span class="company-location">• Ankara, Turkey</span>
+                      </div>
+                      <div class="job-tags">
+                        <span class="job-type">Full-Time</span>
+                        <span class="job-tag marketing">Marketing</span>
+                        <span class="job-tag design">Design</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="job-card-right">
+                    <div class="applicants-info">
+                      <div class="progress-bar">
+                        <div class="progress" style="width: 50%"></div>
+                      </div>
+                      <span class="applicants-text">5 applied</span>
+                      <span class="of">of 10 capacity</span>
+                    </div>
+                    <button class="apply-btn">Apply</button>
+                  </div>
+                </div>
+
+                <!-- Job Card 6 -->
+                <div class="job-card">
+                  <div class="job-card-left">
+                    <div class="company-logo royal-blue">
+                      <span>C</span>
+                    </div>
+                    <div class="job-info">
+                      <h3 class="job-title">Product Designer</h3>
+                      <div class="company-info">
+                        <span class="company-name">ClassPass</span>
+                        <span class="company-location">• Berlin, Germany</span>
+                      </div>
+                      <div class="job-tags">
+                        <span class="job-type">Full-Time</span>
+                        <span class="job-tag marketing">Marketing</span>
+                        <span class="job-tag design">Design</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="job-card-right">
+                    <div class="applicants-info">
+                      <div class="progress-bar">
+                        <div class="progress" style="width: 50%"></div>
+                      </div>
+                      <span class="applicants-text">5 applied</span>
+                      <span class="of">of 10 capacity</span>
+                    </div>
+                    <button class="apply-btn">Apply</button>
+                  </div>
+                </div>
+
+                <!-- Job Card 7 -->
+                <div class="job-card">
+                  <div class="job-card-left">
+                    <div class="company-logo black">
+                      <span>P</span>
+                    </div>
+                    <div class="job-info">
+                      <h3 class="job-title">Customer Manager</h3>
+                      <div class="company-info">
+                        <span class="company-name">Pitch</span>
+                        <span class="company-location">• Berlin, Germany</span>
+                      </div>
+                      <div class="job-tags">
+                        <span class="job-type">Full-Time</span>
+                        <span class="job-tag marketing">Marketing</span>
+                        <span class="job-tag design">Design</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="job-card-right">
+                    <div class="applicants-info">
+                      <div class="progress-bar">
+                        <div class="progress" style="width: 50%"></div>
+                      </div>
+                      <span class="applicants-text">5 applied</span>
+                      <span class="of">of 10 capacity</span>
+                    </div>
+                    <button class="apply-btn">Apply</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pagination -->
+              <div class="pagination">
+                <button class="pagination-btn prev">
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="pagination-btn active">1</button>
+                <button class="pagination-btn">2</button>
+                <button class="pagination-btn">3</button>
+                <button class="pagination-btn">4</button>
+                <button class="pagination-btn">5</button>
+                <span class="pagination-dots">...</span>
+                <button class="pagination-btn">33</button>
+                <button class="pagination-btn next">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./scripts/DashFindJob.js"></script>
+  </body>
+</html>
