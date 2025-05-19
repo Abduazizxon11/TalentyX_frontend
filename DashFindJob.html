@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -24,19 +23,19 @@
         <nav class="sidebar-menu">
           <ul class="menu-items">
             <li class="menu-item">
-              <a href="#" class="menu-link">
+              <a href="dashApp.html" class="menu-link">
                 <i class="fa-solid fa-house"></i>
                 <span>Dashboard</span>
               </a>
             </li>
-            <li class="menu-item active">
-              <a href="#" class="menu-link">
+            <li class="menu-item">
+              <a href="dashMassage.html" class="menu-link">
                 <i class="fa-solid fa-envelope"></i>
                 <span>Messages</span>
                 <span class="badge">1</span>
               </a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item active">
               <a href="#" class="menu-link">
                 <i class="fa-solid fa-file-alt"></i>
                 <span>My Applications</span>
@@ -98,8 +97,12 @@
           <h1>Find Jobs</h1>
           <div class="header-actions">
             <a href="#" class="back-link">Back to homepage</a>
-            <button class="notification-btn">
-              <i class="fa-solid fa-bell"></i>
+            <button id="notificationButton" class="notification-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bell-icon">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+              </svg>
+              <span class="notification-dot"></span>
             </button>
           </div>
         </header>
@@ -562,6 +565,94 @@
                   <i class="fa-solid fa-chevron-right"></i>
                 </button>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="notificationPanel" class="notification-panel">
+      <div class="notification-header">
+        <h2>Notifications</h2>
+        <button class="mark-read">Mark all as read</button>
+      </div>
+      <div class="notification-list">
+        <div class="notification-item">
+          <div class="notification-avatar">
+            <img src="avatar-jan.png" alt="Jan Mayer" onerror="this.src='https://ui-avatars.com/api/?name=Jan+Mayer&background=random'">
+          </div>
+          <div class="notification-content">
+            <div class="notification-message">
+              <span class="notification-name">Jan Mayer</span>
+              <span class="notification-text">invited you to interview with Nomad</span>
+            </div>
+            <div class="notification-tag amber">New</div>
+            <div class="notification-time">12 mins ago</div>
+          </div>
+        </div>
+        
+        <div class="notification-item">
+          <div class="notification-avatar">
+            <img src="avatar-jana.png" alt="Jana Alicia" onerror="this.src='https://ui-avatars.com/api/?name=Jana+Alicia&background=random'">
+          </div>
+          <div class="notification-content">
+            <div class="notification-message">
+              <span class="notification-name">Jana Alicia</span>
+              <span class="notification-text">from Udacity updated your job applications status</span>
+            </div>
+            <div class="notification-tag green">Shortlisted</div>
+            <div class="notification-time">3 days ago</div>
+          </div>
+        </div>
+        
+        <div class="notification-item">
+          <div class="notification-avatar">
+            <img src="avatar-ally.png" alt="Ally Wales" onerror="this.src='https://ui-avatars.com/api/?name=Ally+Wales&background=random'">
+          </div>
+          <div class="notification-content">
+            <div class="notification-message">
+              <span class="notification-name">Ally Wales</span>
+              <span class="notification-text">from Digital Ocean sent you an interview invitation</span>
+            </div>
+            <div class="notification-time">14 July 2021 • 3:26 PM</div>
+          </div>
+        </div>
+        
+        <div class="interview-notification">
+          <div class="interview-title">Interview - Jake Gyll</div>
+          <div class="interview-position">Social Media Manager Role</div>
+          
+          <div class="interview-details">
+            <div class="interview-detail">
+              <div class="detail-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="detail-label">Date</div>
+                <div class="detail-value">Mon, 20 July 2021</div>
+              </div>
+            </div>
+            
+            <div class="interview-detail">
+              <div class="detail-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="detail-label">Time</div>
+                <div class="detail-value">12 PM - 12:30 PM</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="interview-person">
+            <div class="person-avatar">J</div>
+            <div>
+              <div class="person-name">Jake Gyll</div>
+              <div class="person-email">jakegyll@email.com</div>
             </div>
           </div>
         </div>

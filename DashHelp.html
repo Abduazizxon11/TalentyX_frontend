@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobHuntly - Help Center</title>
+  <link rel="stylesheet" href="./styles/DashHelp.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <div class="logo-icon">
+          <i class="fas fa-briefcase"></i>
+        </div>
+        <h2>JobHuntly</h2>
+      </div>
+
+      <nav class="nav-menu">
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-home"></i> Dashboard</a>
+          </li>
+          <li class="active">
+            <a href="#"><i class="fas fa-envelope"></i> Messages <span class="badge">1</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-file-alt"></i> My Applications</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-search"></i> Find Jobs</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-building"></i> Browse Companies</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-user"></i> My Public Profile</a>
+          </li>
+        </ul>
+
+        <div class="divider"></div>
+        <h3>SETTINGS</h3>
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-cog"></i> Settings</a>
+          </li>
+          <li class="active">
+            <a href="#"><i class="fas fa-question-circle"></i> Help Center</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="user-profile">
+        <div class="avatar">
+          <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Jake Gyll">
+        </div>
+        <div class="user-info">
+          <h4>Jake Gyll</h4>
+          <p>jakegyll@email.com</p>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="header">
+        <h1>Help Center</h1>
+        <div class="header-right">
+          <button class="btn-primary">Back to homepage</button>
+          <div class="notification-bell">
+            <i class="fas fa-bell"></i>
+          </div>
+        </div>
+      </header>
+
+      <div class="content-wrapper">
+        <div class="help-sidebar">
+          <div class="search-container">
+            <p>Type your question or search keyword</p>
+            <div class="search-box">
+              <i class="fas fa-search"></i>
+              <input type="text" placeholder="Search">
+            </div>
+          </div>
+          
+          <nav class="help-categories">
+            <ul>
+              <li class="active"><a href="#">Getting Started</a></li>
+              <li><a href="#">My Profile</a></li>
+              <li><a href="#">Applying for a job</a></li>
+              <li><a href="#">Job Search Tips</a></li>
+              <li><a href="#">Job Alerts</a></li>
+            </ul>
+          </nav>
+
+          <div class="contact-card">
+            <h3>Didn't find what you were looking for?</h3>
+            <p>Contact our customer service</p>
+            <button class="btn-secondary">Contact Us</button>
+          </div>
+        </div>
+
+        <div class="help-content">
+          <div class="sort-by">
+            <span>Sort by:</span>
+            <div class="dropdown">
+              <button class="dropdown-toggle">Most relevant <i class="fas fa-chevron-down"></i></button>
+              <div class="dropdown-menu">
+                <a href="#">Most relevant</a>
+                <a href="#">Newest first</a>
+                <a href="#">Oldest first</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="article-list">
+            <article class="help-article">
+              <div class="article-header">
+                <h2>What is My Applications?</h2>
+                <button class="more-options"><i class="fas fa-ellipsis-h"></i></button>
+              </div>
+              <p>My Applications is a way for you to track jobs as you move through the application process. Depending on the job you applied to, you may also receive notifications indicating that an application has been actioned by an employer.</p>
+              
+              <div class="article-feedback">
+                <p>Was this article helpful?</p>
+                <div class="feedback-buttons">
+                  <button class="btn-yes"><i class="fas fa-thumbs-up"></i> Yes</button>
+                  <button class="btn-no"><i class="fas fa-thumbs-down"></i> No</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="help-article">
+              <div class="article-header">
+                <h2>How to access my applications history</h2>
+                <button class="more-options"><i class="fas fa-ellipsis-h"></i></button>
+              </div>
+              <p>To access applications history, go to your My Applications page on your dashboard profile. You must be signed in to your JobHuntly account to view this page.</p>
+              
+              <div class="article-feedback">
+                <p>Was this article helpful?</p>
+                <div class="feedback-buttons">
+                  <button class="btn-yes"><i class="fas fa-thumbs-up"></i> Yes</button>
+                  <button class="btn-no"><i class="fas fa-thumbs-down"></i> No</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="help-article">
+              <div class="article-header">
+                <h2>Not seeing jobs you applied in your my application list?</h2>
+                <button class="more-options"><i class="fas fa-ellipsis-h"></i></button>
+              </div>
+              <p>Please note that we are unable to track materials submitted for jobs you apply to via an employer's site. As a result, these applications are not recorded in the My Applications section of your JobHuntly account. We suggest keeping a personal record of all positions you have applied to externally.</p>
+              
+              <div class="article-feedback">
+                <p>Was this article helpful?</p>
+                <div class="feedback-buttons">
+                  <button class="btn-yes"><i class="fas fa-thumbs-up"></i> Yes</button>
+                  <button class="btn-no"><i class="fas fa-thumbs-down"></i> No</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Chat button at bottom right -->
+    <div class="chat-button">
+      <i class="fas fa-comment"></i>
+    </div>
+  </div>
+
+  <script src="./scripts/DashHelp.js"></script>
+</body>
+</html>

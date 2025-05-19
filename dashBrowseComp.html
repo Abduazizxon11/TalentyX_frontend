@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobHuntly - Browse Companies</title>
+  <link rel="stylesheet" href="./styles/dashBrowseComp.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-content">
+        <div class="logo">
+          <img src="https://cdn.builder.io/api/v1/image/assets/2154c3a98ae842dca5d627292a5a4e03/242b6d338a9989bac2e5962366382fbae283fb5e" alt="JobHuntly Logo" />
+          <span>JobHuntly</span>
+        </div>
+        
+        <div class="sidebar-menu">
+          <div class="menu-section">
+            <div class="sidebar-item">
+              <img src="https://cdn.builder.io/api/v1/image/assets/2154c3a98ae842dca5d627292a5a4e03/21171d309be8e5986adfeff6b428ef172bd4b286" alt="Icon" />
+              <span>Dashboard</span>
+            </div>
+            <div class="sidebar-item">
+              <img src="https://cdn.builder.io/api/v1/image/assets/2154c3a98ae842dca5d627292a5a4e03/a7a283ed8f4a8a17aca4fd22adf04d8711250775" alt="Icon" />
+              <span>Messages</span>
+              <div class="badge">1</div>
+            </div>
+            <div class="sidebar-item">
+              <img src="https://cdn.builder.io/api/v1/image/assets/2154c3a98ae842dca5d627292a5a4e03/5e841af334ca39503830795101b31650bc2d46a2" alt="Icon" />
+              <span>My Applications</span>
+            </div>
+            <div class="sidebar-item">
+              <span class="ml-10">Find Jobs</span>
+            </div>
+            <div class="sidebar-item active">
+              <img src="https://cdn.builder.io/api/v1/image/assets/2154c3a98ae842dca5d627292a5a4e03/d34a715596f5919e18fda197c04f878b1ea2aa86" alt="Icon" />
+              <span>Browse Companies</span>
+            </div>
+            <div class="sidebar-item">
+              <img src="https://cdn.builder.io/api/v1/image/assets/2154c3a98ae842dca5d627292a5a4e03/1ba877512f75d894768bcf90beeed4029159e347" alt="Icon" />
+              <span>My Public Profile</span>
+            </div>
+          </div>
+          
+          <div class="separator"></div>
+          
+          <div class="menu-section">
+            <div class="menu-title">SETTINGS</div>
+            <div class="sidebar-item">
+              <img src="https://cdn.builder.io/api/v1/image/assets/2154c3a98ae842dca5d627292a5a4e03/a6b7061ccf980fe5bc5e8232b38c4f1239954dce" alt="Icon" />
+              <span>Settings</span>
+            </div>
+            <div class="sidebar-item">
+              <img src="https://cdn.builder.io/api/v1/image/assets/2154c3a98ae842dca5d627292a5a4e03/b226df0fed04967a3d8a08ae01e7aaa3f02d79cb" alt="Icon" />
+              <span>Help Center</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="user-info">
+        <img src="https://cdn.builder.io/api/v1/image/assets/2154c3a98ae842dca5d627292a5a4e03/2c6a3c349f6de0b2571f84acfbb4f94c04172b23" alt="Profile" />
+        <div class="user-email">jakegyll@email.com</div>
+      </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Top Navigation -->
+      <div class="top-nav">
+        <div class="page-title">
+          <h1>Browse Companies</h1>
+        </div>
+        <div class="nav-actions">
+          <button class="back-button">Back to homepage</button>
+          <div class="notification-dot">
+            <div class="dot"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Search Box -->
+      <div class="search-container">
+        <div class="search-box-wrapper">
+          <form class="search-form" id="searchForm">
+            <div class="search-box">
+              <div class="search-input-group">
+                <div class="input-icon"></div>
+                <div class="input-wrapper">
+                  <input type="text" id="keyword" placeholder="Company title or keyword" class="search-input" />
+                  <div class="input-underline"></div>
+                </div>
+              </div>
+              
+              <div class="divider"></div>
+              
+              <div class="search-input-group">
+                <div class="input-icon"></div>
+                <div class="input-wrapper">
+                  <div class="location-input-container">
+                    <input type="text" id="location" value="Florence, Italy" class="search-input" />
+                    <div class="location-icon"></div>
+                  </div>
+                  <div class="input-underline"></div>
+                </div>
+              </div>
+              
+              <button type="submit" class="search-button">Search</button>
+            </div>
+          </form>
+          <div class="popular-searches">Popular : Twitter, Microsoft, Apple, Facebook</div>
+        </div>
+        <div class="search-separator"></div>
+      </div>
+      
+      <!-- Content Area -->
+      <div class="content-area">
+        <!-- Filter Section -->
+        <div class="filter-section">
+          <div class="filter-group">
+            <h3 class="filter-title">Industry</h3>
+            
+            <div class="checkbox-item">
+              <label>
+                <div class="checkbox-unchecked"></div>
+                <span>Advertising (43)</span>
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <label>
+                <div class="checkbox-unchecked"></div>
+                <span>Business Service (4)</span>
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <label>
+                <div class="checkbox-unchecked"></div>
+                <span>Blockchain (5)</span>
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <label>
+                <div class="checkbox-unchecked"></div>
+                <span>Cloud (15)</span>
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <label>
+                <div class="checkbox-unchecked"></div>
+                <span>Consumer Tech (5)</span>
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <label>
+                <div class="checkbox-unchecked"></div>
+                <span>Education (34)</span>
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <label>
+                <div class="checkbox-unchecked"></div>
+                <span>Fintech (45)</span>
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <label>
+                <div class="checkbox-unchecked"></div>
+                <span>Gaming (33)</span>
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <label>
+                <div class="checkbox-unchecked"></div>
+                <span>Food & Beverage (5)</span>
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <label>
+                <div class="checkbox-unchecked"></div>
+                <span>Healthcare (3)</span>
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <label>
+                <div class="checkbox-unchecked"></div>
+                <span>Hostinng (5)</span>
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <label>
+                <div class="checkbox-unchecked"></div>
+                <span>Media (4)</span>
+              </label>
+            </div>
+          </div>
+          
+          <div class="filter-group">
+            <h3 class="filter-title">Company Size</h3>
+            
+            <div class="checkbox-item">
+              <label>
+                <div class="checkbox-unchecked"></div>
+                <span>1-50 (25)</span>
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <label>
+                <div class="checkbox-unchecked"></div>
+                <span>51-150 (57)</span>
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <label>
+                <div class="checkbox-unchecked"></div>
+                <span>151-250 (45)</span>
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <label>
+                <img src="https://cdn.builder.io/api/v1/image/assets/2154c3a98ae842dca5d627292a5a4e03/d1a1518c2bb44ae5172889c3b482b69c12834c24" alt="Checked" class="checkbox-checked" />
+                <span>251-500 (4)</span>
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <label>
+                <div class="checkbox-unchecked"></div>
+                <span>501-1000 (43)</span>
+              </label>
+            </div>
+            <div class="checkbox-item">
+              <label>
+                <div class="checkbox-unchecked"></div>
+                <span>1000 - above (23)</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Company List Section -->
+        <div class="company-list-section">
+          <div class="company-list-header">
+            <div class="header-titles">
+              <h2>All Companies</h2>
+              <div class="results-count">Showing 73 results</div>
+            </div>
+            
+            <div class="list-controls">
+              <div class="sort-controls">
+                <span class="sort-label">Sort by:</span>
+                <div class="sort-select">
+                  <select id="sortSelect">
+                    <option value="relevant">Most relevant</option>
+                    <option value="newest">Newest</option>
+                    <option value="oldest">Oldest</option>
+                  </select>
+                  <div class="select-icon"></div>
+                </div>
+              </div>
+              
+              <div class="vertical-divider"></div>
+              
+              <div class="view-controls">
+                <button class="view-button view-grid active">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/2154c3a98ae842dca5d627292a5a4e03/edc0eddfba1b12949744edc6ca8cf6952d7ddd27" alt="Grid view" />
+                </button>
+                <button class="view-button view-list">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/2154c3a98ae842dca5d627292a5a4e03/f3b39ac2664104604a6377b5913a90485247eb63" alt="List view" />
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="company-cards">
+            <div class="company-card">
+              <div class="card-header">
+                <img src="https://cdn.builder.io/api/v1/image/assets/2154c3a98ae842dca5d627292a5a4e03/470b3de5da449b3d24e599f4b4e145608b0e4738" alt="Stripe logo" class="company-logo" />
+                <div class="job-count">7 Jobs</div>
+              </div>
+              <div class="company-info">
+                <h3 class="company-name">Stripe</h3>
+                <p class="company-description">Stripe is a software platform for starting and running internet businesses. Millions of businesses rely on Stripe's software tools...</p>
+              </div>
+              <div class="company-tags">
+                <span class="tag tag-green">Business</span>
+                <span class="tag tag-blue">Payment gateway</span>
+              </div>
+            </div>
+            
+            <div class="company-card">
+              <div class="card-header">
+                <img src="https://cdn.builder.io/api/v1/image/assets/2154c3a98ae842dca5d627292a5a4e03/304504397d120aa0c00ea6acea7a72fce50b765b" alt="Truebill logo" class="company-logo" />
+                <div class="job-count">7 Jobs</div>
+              </div>
+              <div class="company-info">
+                <h3 class="company-name">Truebill</h3>
+                <p class="company-description">Take control of your money. Truebill develops a mobile app that helps consumers take control of their financial...</p>
+              </div>
+              <div class="company-tags">
+                <span class="tag tag-green">Business</span>
+              </div>
+            </div>
+            
+            <div class="company-card">
+              <div class="card-header">
+                <img src="https://cdn.builder.io/api/v1/image/assets/2154c3a98ae842dca5d627292a5a4e03/64d17bf112f1d0d36fbd18523bf0084e50694c89" alt="Square logo" class="company-logo" />
+                <div class="job-count">7 Jobs</div>
+              </div>
+              <div class="company-info">
+                <h3 class="company-name">Square</h3>
+                <p class="company-description">Square builds common business tools in unconventional ways so more people can start, run, and grow their businesses.</p>
+              </div>
+              <div class="company-tags">
+                <span class="tag tag-green">Business</span>
+                <span class="tag tag-yellow">Blockchain</span>
+              </div>
+            </div>
+            
+            <div class="company-card">
+              <div class="card-header">
+                <img src="https://cdn.builder.io/api/v1/image/assets/2154c3a98ae842dca5d627292a5a4e03/dde8a11b20a32feebb780e0660ef56bf753b98ef" alt="Coinbase logo" class="company-logo" />
+                <div class="job-count">7 Jobs</div>
+              </div>
+              <div class="company-info">
+                <h3 class="company-name">Coinbase</h3>
+                <p class="company-description">Coinbase is a digital currency wallet and platform where merchants and consumers can transact with new digital currencies.</p>
+              </div>
+              <div class="company-tags">
+                <span class="tag tag-green">Business</span>
+                <span class="tag tag-yellow">Blockchain</span>
+              </div>
+            </div>
+            
+            <div class="company-card">
+              <div class="card-header">
+                <img src="https://cdn.builder.io/api/v1/image/assets/2154c3a98ae842dca5d627292a5a4e03/b2a20ebc22212a4fa0820171a4dd312059030ccc" alt="Robinhood logo" class="company-logo" />
+                <div class="job-count">7 Jobs</div>
+              </div>
+              <div class="company-info">
+                <h3 class="company-name">Robinhood</h3>
+                <p class="company-description">Robinhood is lowering barriers, removing fees, and providing greater access to financial information.</p>
+              </div>
+              <div class="company-tags">
+                <span class="tag tag-green">Business</span>
+              </div>
+            </div>
+            
+            <div class="company-card">
+              <div class="card-header">
+                <img src="https://cdn.builder.io/api/v1/image/assets/2154c3a98ae842dca5d627292a5a4e03/0aadd83115f3ea4dec33c342b002fb0b871fc4a9" alt="Kraken logo" class="company-logo" />
+                <div class="job-count">7 Jobs</div>
+              </div>
+              <div class="company-info">
+                <h3 class="company-name">Kraken</h3>
+                <p class="company-description">Based in San Francisco, Kraken is the world's largest global bitcoin exchange in euro volume and liquidity.</p>
+              </div>
+              <div class="company-tags">
+                <span class="tag tag-green">Business</span>
+                <span class="tag tag-yellow">Blockchain</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="pagination">
+            <button class="pagination-arrow prev-arrow" disabled>
+              <img src="https://cdn.builder.io/api/v1/image/assets/2154c3a98ae842dca5d627292a5a4e03/7c8c31cbd49525e3a5cef676777e5cf1f1bbd568" alt="Previous" />
+            </button>
+            <div class="pagination-numbers">
+              <button class="page-number active">1</button>
+              <button class="page-number">2</button>
+              <button class="page-number">3</button>
+              <div class="page-ellipsis">...</div>
+              <button class="page-number">33</button>
+            </div>
+            <button class="pagination-arrow next-arrow">
+              <img src="https://cdn.builder.io/api/v1/image/assets/2154c3a98ae842dca5d627292a5a4e03/0a4e0f9ac9242769d4e106fcd782f8a06553f227" alt="Next" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="header-actions">
+    <button id="notificationButton" class="notification-button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bell-icon">
+        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+      </svg>
+      <span class="notification-dot"></span>
+    </button>
+    <div id="notificationPanel" class="notification-panel">
+      <div class="notification-header">
+        <h2>Notifications</h2>
+        <button class="mark-read">Mark all as read</button>
+      </div>
+      <div class="notification-list">
+        <div class="notification-item">
+          <div class="notification-avatar">
+            <img src="avatar-jan.png" alt="Jan Mayer" onerror="this.src='https://ui-avatars.com/api/?name=Jan+Mayer&background=random'">
+          </div>
+          <div class="notification-content">
+            <div class="notification-message">
+              <span class="notification-name">Jan Mayer</span>
+              <span class="notification-text">invited you to interview with Nomad</span>
+            </div>
+            <div class="notification-tag amber">New</div>
+            <div class="notification-time">12 mins ago</div>
+          </div>
+        </div>
+        
+        <div class="notification-item">
+          <div class="notification-avatar">
+            <img src="avatar-jana.png" alt="Jana Alicia" onerror="this.src='https://ui-avatars.com/api/?name=Jana+Alicia&background=random'">
+          </div>
+          <div class="notification-content">
+            <div class="notification-message">
+              <span class="notification-name">Jana Alicia</span>
+              <span class="notification-text">from Udacity updated your job applications status</span>
+            </div>
+            <div class="notification-tag green">Shortlisted</div>
+            <div class="notification-time">3 days ago</div>
+          </div>
+        </div>
+        
+        <div class="notification-item">
+          <div class="notification-avatar">
+            <img src="avatar-ally.png" alt="Ally Wales" onerror="this.src='https://ui-avatars.com/api/?name=Ally+Wales&background=random'">
+          </div>
+          <div class="notification-content">
+            <div class="notification-message">
+              <span class="notification-name">Ally Wales</span>
+              <span class="notification-text">from Digital Ocean sent you an interview invitation</span>
+            </div>
+            <div class="notification-time">14 July 2021 • 3:26 PM</div>
+          </div>
+        </div>
+        
+        <div class="interview-notification">
+          <div class="interview-title">Interview - Jake Gyll</div>
+          <div class="interview-position">Social Media Manager Role</div>
+          
+          <div class="interview-details">
+            <div class="interview-detail">
+              <div class="detail-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="detail-label">Date</div>
+                <div class="detail-value">Mon, 20 July 2021</div>
+              </div>
+            </div>
+            
+            <div class="interview-detail">
+              <div class="detail-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="detail-label">Time</div>
+                <div class="detail-value">12 PM - 12:30 PM</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="interview-person">
+            <div class="person-avatar">J</div>
+            <div>
+              <div class="person-name">Jake Gyll</div>
+              <div class="person-email">jakegyll@email.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="user-button">
+      <div class="user-avatar">JG</div>
+    </button>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

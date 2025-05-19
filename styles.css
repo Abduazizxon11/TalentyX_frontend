@@ -1,0 +1,841 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --primary-color: #6a5cff;
+  --text-color: #1A1F2C;
+  --light-text: #64748b;
+  --lighter-text: #94a3b8;
+  --background-color: #f9fafb;
+  --sidebar-bg: #f8f9fc;
+  --border-color: #eaedf2;
+  --danger-color: #ef4444;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+/* App container */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 250px;
+  background-color: var(--sidebar-bg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--border-color);
+}
+
+.logo-container {
+  padding: 10px 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 28px;
+  height: 28px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.logo h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--light-text);
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.nav-link svg {
+  margin-right: 10px;
+}
+
+.nav-link:hover {
+  background-color: rgba(106, 92, 255, 0.05);
+}
+
+.nav-link.active {
+  background-color: rgba(106, 92, 255, 0.1);
+  color: var(--primary-color);
+}
+
+.badge {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 9999px;
+  margin-left: auto;
+}
+
+.sidebar-divider {
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 20px 0 10px;
+}
+
+.sidebar-section-title {
+  font-size: 12px;
+  color: var(--lighter-text);
+  margin: 10px 0;
+  padding-left: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.user-profile {
+  margin-top: auto;
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--border-color);
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.user-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-info h4 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.user-info p {
+  font-size: 12px;
+  color: var(--lighter-text);
+}
+
+/* Main content styles */
+.main-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.back-button {
+  padding: 8px 16px;
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--primary-color);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: var(--background-color);
+}
+
+.notification-bell {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  color: var(--light-text);
+}
+
+/* Settings container styles */
+.settings-container {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.settings-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 30px;
+}
+
+.tab-button {
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--light-text);
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.tab-button:hover {
+  color: var(--text-color);
+}
+
+.tab-button.active {
+  color: var(--primary-color);
+}
+
+.tab-button.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.tab-content {
+  display: none;
+  padding: 30px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Settings section styles */
+.settings-section {
+  margin-bottom: 30px;
+}
+
+.settings-section h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.section-desc {
+  color: var(--light-text);
+  font-size: 14px;
+}
+
+.form-group {
+  display: flex;
+  border-bottom: 1px solid var(--border-color);
+  padding: 30px 0;
+}
+
+.form-left {
+  width: 30%;
+  padding-right: 20px;
+}
+
+.form-left h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.form-left p {
+  font-size: 14px;
+  color: var(--light-text);
+}
+
+.form-right {
+  width: 70%;
+}
+
+/* Profile photo section */
+.profile-photo-section {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.profile-photo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-upload-area {
+  border: 2px dashed #8db0fa;
+  border-radius: 4px;
+  width: 320px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.photo-upload-area:hover {
+  background-color: #f8fafc;
+}
+
+.photo-upload-area svg {
+  color: #4f8bf1;
+  margin-bottom: 8px;
+}
+
+.photo-upload-area p:first-of-type {
+  color: #4f8bf1;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.photo-upload-area p:last-of-type {
+  color: var(--light-text);
+  font-size: 12px;
+}
+
+/* Form grid styles */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.form-field {
+  margin-bottom: 16px;
+}
+
+.form-field label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.form-field input,
+.form-field select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 1px rgba(106, 92, 255, 0.1);
+}
+
+/* Email update section */
+.current-email {
+  margin-bottom: 20px;
+}
+
+.email-with-checkmark {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.checkmark {
+  color: #1da95f;
+}
+
+.verified {
+  font-size: 14px;
+  color: var(--light-text);
+}
+
+.update-email-form h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.update-email-form input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Password form styles */
+.password-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.password-field h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.min-chars {
+  font-size: 12px;
+  color: var(--light-text);
+  margin-top: 5px;
+}
+
+/* Button styles */
+.update-email-button,
+.change-password-button,
+.update-notifications-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.update-email-button:hover,
+.change-password-button:hover,
+.update-notifications-button:hover {
+  background-color: #5a4cef;
+}
+
+/* Notification options styles */
+.notification-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.notification-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.checkbox-container {
+  position: relative;
+  margin-top: 3px;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.custom-checkbox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border-color);
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.custom-checkbox svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: none;
+}
+
+input:checked + .custom-checkbox {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+input:checked + .custom-checkbox svg {
+  display: block;
+}
+
+.option-details h4 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.option-details p {
+  color: var(--light-text);
+  font-size: 13px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .main-content {
+    padding: 20px;
+  }
+  
+  .form-group {
+    flex-direction: column;
+  }
+  
+  .form-left,
+  .form-right {
+    width: 100%;
+  }
+  
+  .form-left {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .settings-tabs {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.password-field input[type="password"] {
+  width: 80%;
+  max-width: 400px;
+  padding: 12px 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 15px;
+  transition: all 0.2s ease;
+  background-color: #f8fafc;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.password-field input[type="password"]:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(106, 92, 255, 0.1);
+  background-color: white;
+}
+
+.password-field {
+  margin-bottom: 24px;
+}
+
+.password-field h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--text-color);
+}
+
+.min-chars {
+  font-size: 13px;
+  color: var(--light-text);
+  margin-top: 8px;
+}
+
+.change-password-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+  width: 80%;
+  max-width: 400px;
+  margin-top: 10px;
+}
+
+.change-password-button:hover {
+  background-color: #5a4cef;
+}
+
+/* Notification Panel Styles */
+.notification-button {
+  position: relative;
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: rgb(75, 85, 99);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-button:hover {
+  background-color: rgb(243, 244, 246);
+}
+
+.notification-dot {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: rgb(239, 68, 68);
+  border-radius: 50%;
+}
+
+.notification-panel {
+  width: 400px;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgb(229, 231, 235);
+  overflow: hidden;
+  position: absolute;
+  top: 4rem;
+  right: 1rem;
+  z-index: 50;
+  display: none;
+}
+
+.notification-panel.show {
+  display: block;
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid rgb(229, 231, 235);
+}
+
+.notification-header h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(31, 41, 55);
+}
+
+.mark-read {
+  font-size: 0.875rem;
+  color: rgb(79, 70, 229);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mark-read:hover {
+  color: rgb(67, 56, 202);
+}
+
+.notification-list {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.notification-item {
+  padding: 1rem;
+  display: flex;
+  border-bottom: 1px solid rgb(229, 231, 235);
+}
+
+.notification-item:hover {
+  background-color: rgb(249, 250, 251);
+}
+
+.notification-avatar {
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+}
+
+.notification-avatar img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: rgb(229, 231, 235);
+}
+
+.notification-content {
+  flex-grow: 1;
+}
+
+.notification-message {
+  margin-bottom: 0.25rem;
+}
+
+.notification-name {
+  font-weight: 500;
+  color: rgb(31, 41, 55);
+}
+
+.notification-text {
+  color: rgb(107, 114, 128);
+}
+
+.notification-tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.notification-tag.amber {
+  background-color: rgb(254, 243, 199);
+  color: rgb(217, 119, 6);
+}
+
+.notification-tag.green {
+  background-color: rgb(220, 252, 231);
+  color: rgb(22, 163, 74);
+}
+
+.notification-time {
+  font-size: 0.75rem;
+  color: rgb(156, 163, 175);
+  margin-top: 0.25rem;
+}
+
+/* Interview notification styles */
+.interview-notification {
+  background-color: rgb(238, 242, 255);
+  border-left: 4px solid rgb(99, 102, 241);
+  padding: 1rem;
+  margin-left: 3.25rem;
+  margin-bottom: 1rem;
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.interview-title {
+  font-weight: 500;
+  color: rgb(31, 41, 55);
+  margin-bottom: 0.25rem;
+}
+
+.interview-position {
+  font-size: 0.875rem;
+  color: rgb(107, 114, 128);
+  margin-bottom: 0.75rem;
+}
+
+.interview-details {
+  display: flex;
+  margin-bottom: 0.75rem;
+}
+
+.interview-detail {
+  display: flex;
+  margin-right: 1.5rem;
+}
+
+.detail-icon {
+  color: rgb(156, 163, 175);
+  margin-right: 0.5rem;
+}
+
+.detail-label {
+  font-size: 0.75rem;
+  color: rgb(156, 163, 175);
+}
+
+.detail-value {
+  font-size: 0.875rem;
+}
+
+.interview-person {
+  display: flex;
+  align-items: center;
+}
+
+.person-avatar {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: rgb(229, 231, 235);
+  color: rgb(31, 41, 55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  margin-right: 0.5rem;
+}
+
+.person-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.person-email {
+  font-size: 0.75rem;
+  color: rgb(156, 163, 175);
+} 

@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JobHuntly - Job Application Tracker</title>
+  <meta name="description" content="Track your job applications with JobHuntly" />
+  <meta name="author" content="JobHuntly" />
+  <meta property="og:title" content="JobHuntly - Job Application Tracker" />
+  <meta property="og:description" content="Track your job applications with JobHuntly" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@jobhuntly" />
+  <meta name="twitter:image" content="" />
+  <link rel="stylesheet" href="./styles/DashAppHistory.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <div class="logo-icon">J</div>
+          <span class="logo-text">JobHuntly</span>
+        </div>
+      </div>
+      
+      <nav class="sidebar-nav">
+        <ul class="nav-list">
+          <li class="nav-item active">
+            <a href="#" class="nav-link">
+              <i class="fas fa-briefcase"></i>
+              <span>My Applications</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-comment"></i>
+              <span>Messages</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-search"></i>
+              <span>Find Jobs</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-building"></i>
+              <span>Browse Companies</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-user"></i>
+              <span>My Public Profile</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="nav-divider"></div>
+        
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-cog"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-question-circle"></i>
+              <span>Help Center</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <header class="page-header">
+        <h1>My Applications</h1>
+        <a href="#" class="back-link">Back to homepage</a>
+      </header>
+
+      <main class="content-area">
+        <div class="container">
+          <div class="greeting-section">
+            <div class="greeting-header">
+              <h2>Keep it up, Jake</h2>
+              <div class="date-selector">
+                <span>Jul 19 - Jul 25</span>
+                <i class="fas fa-calendar"></i>
+              </div>
+            </div>
+            <p class="greeting-subtext">Here is job applications status from July 19 - July 25</p>
+          </div>
+
+          <!-- Feature Alert Box -->
+          <div class="feature-alert">
+            <button class="close-btn">&times;</button>
+            <div class="feature-alert-content">
+              <div class="feature-icon">
+                <div class="icon-wrapper">
+                  <span>J</span>
+                </div>
+              </div>
+              <div class="feature-text">
+                <h3>New Feature</h3>
+                <p>
+                  You can request a follow-up 7 days after applying for a job if the application status is in review.
+                  <br>Only one follow-up is allowed per job.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Status Tabs -->
+          <div class="status-tabs">
+            <div class="tabs-header">
+              <button class="tab-button active" data-tab="all">All (45)</button>
+              <button class="tab-button" data-tab="in-review">In Review (34)</button>
+              <button class="tab-button" data-tab="interviewing">Interviewing (18)</button>
+              <button class="tab-button" data-tab="assessment">Assessment (6)</button>
+              <button class="tab-button" data-tab="offered">Offered (2)</button>
+              <button class="tab-button" data-tab="hired">Hired (1)</button>
+            </div>
+          </div>
+
+          <!-- Applications History -->
+          <div class="applications-history">
+            <div class="applications-header">
+              <h3>Applications History</h3>
+              <div class="applications-actions">
+                <div class="search-box">
+                  <input type="text" placeholder="Search">
+                  <i class="fas fa-search"></i>
+                </div>
+                <button class="filter-btn">
+                  <i class="fas fa-filter"></i>
+                  <span>Filter</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="table-container">
+              <table class="applications-table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Company Name</th>
+                    <th>Roles</th>
+                    <th>Date Applied</th>
+                    <th>Status</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>
+                      <div class="company-info">
+                        <div class="company-logo" style="background-color: #42CA9F;">N</div>
+                        <span>Nomad</span>
+                      </div>
+                    </td>
+                    <td>Social Media Assistant</td>
+                    <td>24 July 2021</td>
+                    <td>
+                      <div class="status-badge in-review">In Review</div>
+                    </td>
+                    <td>
+                      <button class="action-btn">
+                        <i class="fas fa-ellipsis-h"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>
+                      <div class="company-info">
+                        <div class="company-logo" style="background-color: #02B3E4;">U</div>
+                        <span>Udacity</span>
+                      </div>
+                    </td>
+                    <td>Social Media Assistant</td>
+                    <td>20 July 2021</td>
+                    <td>
+                      <div class="status-badge shortlisted">Shortlisted</div>
+                    </td>
+                    <td>
+                      <button class="action-btn">
+                        <i class="fas fa-ellipsis-h"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>
+                      <div class="company-info">
+                        <div class="company-logo" style="background-color: #F26D5B;">P</div>
+                        <span>Packer</span>
+                      </div>
+                    </td>
+                    <td>Social Media Assistant</td>
+                    <td>16 July 2021</td>
+                    <td>
+                      <div class="status-badge offered">Offered</div>
+                    </td>
+                    <td>
+                      <button class="action-btn">
+                        <i class="fas fa-ellipsis-h"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>
+                      <div class="company-info">
+                        <div class="company-logo" style="background-color: #3E3E3E;">D</div>
+                        <span>Divvy</span>
+                      </div>
+                    </td>
+                    <td>Social Media Assistant</td>
+                    <td>14 July 2021</td>
+                    <td>
+                      <div class="status-badge interviewing">Interviewing</div>
+                    </td>
+                    <td>
+                      <button class="action-btn">
+                        <i class="fas fa-ellipsis-h"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>
+                      <div class="company-info">
+                        <div class="company-logo" style="background-color: #0080FF;">DO</div>
+                        <span>DigitalOcean</span>
+                      </div>
+                    </td>
+                    <td>Social Media Assistant</td>
+                    <td>10 July 2021</td>
+                    <td>
+                      <div class="status-badge unsuitable">Unsuitable</div>
+                    </td>
+                    <td>
+                      <button class="action-btn">
+                        <i class="fas fa-ellipsis-h"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+              <div class="pagination-controls">
+                <button class="page-btn prev">&lt;</button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn">5</button>
+                <span class="page-ellipsis">...</span>
+                <button class="page-btn">33</button>
+                <button class="page-btn next">&gt;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="./scripts/DashAppHistory.js"></script>
+</body>
+</html>
